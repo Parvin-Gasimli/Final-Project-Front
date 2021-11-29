@@ -78,15 +78,23 @@ $('.slider').slick({
         }
     ]
 });
-
+$('.multiple-items').slick({
+    prevArrow: '<i class="fas fa-chevron-left left"></i>',
+    nextArrow: '<i class="fas fa-chevron-right right"></i>',
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1 ,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
 
 
 
 
 $('.slider1').slick({
     dots: true,
-    prevArrow: '<i class="fas fa-chevron-left left"></i>',
-    nextArrow: '<i class="fas fa-chevron-right right"></i>',
+    prevArrow: '<i class="fas fa-chevron-left left right"></i>',
+    nextArrow: '<i class="fas fa-chevron-right right" left></i>',
     infinite: false,
     speed: 300,
     slidesToShow: 1,

@@ -2252,31 +2252,39 @@ main .container .row .CategoryItem li a:hover {
   display: -ms-flexbox;
   display: flex;
   padding: 70px 0px 70px 0px;
+  position: relative;
 }
 
-.partners .partner-imagebox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
+.partners .row .multiple-items .right {
+  position: absolute;
+  top: -58px;
+  right: 17px;
+  font-size: 23px;
+}
+
+.partners .row .multiple-items .left {
+  position: absolute;
+  top: -58px;
+  right: 60px;
+  font-size: 23px;
+}
+
+.partners .row .col-lg-3 h2 hr {
   width: 100%;
 }
 
-.partners .partner-imagebox .partner-item {
-  cursor: -webkit-grab;
-  cursor: grab;
-  position: relative;
-  margin: 10px;
-}
-
-.partners .partner-imagebox .partner-item img {
+.partners .row img {
+  width: 198px;
+  -o-object-fit: cover;
+     object-fit: cover;
   opacity: 0.7;
+  cursor: pointer;
   width: auto;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.partners .partner-imagebox .partner-item img:hover {
+.partners .row img:hover {
   opacity: 1;
 }
 
