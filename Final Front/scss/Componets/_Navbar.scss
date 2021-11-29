@@ -106,9 +106,9 @@ nav {
                     font-weight: 300;
                     text-decoration: none;
                     color: white;
-                    transition: .2s linear;
-                    &:hover{
-                        color:$mainColor ;
+                    transition: 0.2s linear;
+                    &:hover {
+                        color: $mainColor;
                     }
                 }
             }
@@ -159,7 +159,7 @@ main {
                     font-weight: 300;
                     letter-spacing: 1px;
                     margin-left: -23px;
-                    i{
+                    i {
                         font-weight: 400;
                     }
                 }
@@ -182,9 +182,8 @@ main {
                         transition: 0.3s linear;
                         text-decoration: none;
                         color: black;
-                       
+
                         i {
-                            
                             font-size: 17px;
                             margin-right: 14px;
                         }
@@ -197,5 +196,33 @@ main {
             }
         }
     }
-   
+}
+@media (min-width: 1000px) and (max-width: 1099px) {
+    nav .black button {
+        width: 216px;
+    }
+}
+@media (min-width: 768px) and (max-width: 999px) {
+    .CategoryItem {
+        display: none;
+    }
+    main {
+        .col-lg-9 {
+            width: 100%;
+        }
+       
+    }
+    .black {
+        position: relative;
+        .bottom_header .container .bot_nav {
+            top: -62px;
+            position: absolute;
+        }
+        .bottom_header .container .bot_nav .bot_second .menu_nav .menu_nav-item{
+            margin-right: 12px;
+        }
+        .Category{
+        opacity: 0;
+        }
+    }
 }

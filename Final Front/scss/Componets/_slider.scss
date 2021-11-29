@@ -123,3 +123,47 @@
         }
     }
 }
+@media (min-width: 998px) and (max-width: 1099px){
+    .slider {
+        i{
+            display: none;
+        }
+        .content{
+            top: 30%;
+            left: 29%;
+            position: absolute;
+            display: inline-block;
+            h2{font-size: 40px;
+                font-weight: bold;
+
+            }
+
+        }
+        .content2{
+            top: 30%;
+            left: 45%;
+            position: absolute;
+            display: inline-block;
+            h2{font-size: 40px;
+                font-weight: bold;
+
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 999px){
+   
+    .slider{
+        .content{
+            left: 816px;
+        }
+        .content2{
+            left: 1480px;
+        }
+        .context{
+            left: 2162px;
+            top: 31%;
+        }
+    }
+  
+}
