@@ -197,12 +197,12 @@ main {
         }
     }
 }
-@media (min-width: 1000px) and (max-width: 1099px) {
+@media  (max-width: 1099px) {
     nav .black button {
         width: 216px;
     }
 }
-@media (min-width: 768px) and (max-width: 999px) {
+@media  (max-width: 999px) {
     .CategoryItem {
         display: none;
     }
@@ -221,8 +221,21 @@ main {
         .bottom_header .container .bot_nav .bot_second .menu_nav .menu_nav-item{
             margin-right: 12px;
         }
+        
+    }
+}
+@media (max-width: 768px){
+    main{
         .Category{
-        opacity: 0;
+            opacity: 0;
+            }
+    }
+}
+@media(max-width:768px){
+    .black{
+        .col-lg-9{
+            display: none;
         }
     }
 }
+

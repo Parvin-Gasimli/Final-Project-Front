@@ -1,0 +1,59 @@
+#newCollection {
+    padding-top: 80px;
+    .banner {
+        position: relative;
+        .singleBanner{
+         overflow: hidden;
+            img{
+         
+                transition: .4s linear;
+                object-fit: cover;
+                animation: Zoomin 7s linear infinite;
+            }
+          
+        }
+        .bannerInfo {
+            position: absolute;
+            top: 130px;
+            left: 50%;
+        }
+        &:hover img{
+            transform: scale(1.06);
+        }
+    }
+    .banner2 {
+        position: relative;
+        overflow: hidden;
+        .Info {
+            position: absolute;
+            top: 34%;
+            left: 54%;
+        }
+        img{
+            transition: .4s linear;
+            object-fit: cover;
+            animation: ZoominOut 7s linear infinite;
+        }
+    }
+}
+
+
+
+@keyframes Zoomin {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+}
+@keyframes ZoominOut {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.9);
+	}
+}
