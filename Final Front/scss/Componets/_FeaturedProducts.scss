@@ -1,12 +1,28 @@
 #FeaturedProducts {
-    .col-lg-3{
-       
-      padding-top: 20px;
-      width: 33%;
+    padding-top: 90px;
+    position: relative;
+    .multiple-items2 {
+        .left {
+            font-size: 20px;
+            top: -55px;
+            position: absolute;
+            right: 129px;
+        }
+        .right{
+            top: -55px;
+            position: absolute;
+            right: 90px;
+            font-size: 20px;
+        }
     }
-    .FetureProduct {    width: 393px;
-      
-        box-shadow: 0px 1px 4px 0px grey;
+    .col-lg-3 {
+        padding-top: 20px;
+        width: 33.333%;
+    }
+    .FetureProduct {
+        width: 393px;
+
+        box-shadow: 0px 0px 1px 0px grey;
         display: flex;
         .ProductData {
             img {
@@ -22,8 +38,8 @@
         h2 {
             font-size: 16px;
             margin-top: 25px;
-            transition: .3s linear;
-            &:hover{
+            transition: 0.3s linear;
+            &:hover {
                 color: $mainColor;
                 cursor: pointer;
             }
@@ -50,11 +66,12 @@
         .star {
             margin-top: 5px;
             display: flex;
-            i {font-size: 13px;
-                
+            i {
+                font-size: 13px;
+
                 color: goldenrod;
             }
-            p{
+            p {
                 margin-left: 20px;
             }
         }
