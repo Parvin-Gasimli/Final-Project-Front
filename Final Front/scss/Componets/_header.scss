@@ -652,12 +652,13 @@
                                 opacity: 1;
                                 visibility: visible;
                                 transform: scale(1) !important;
+                                background-color:    $background;;
                             }
                         }
                         a {
                             padding: 22px 10px;
                             font-size: 16px;
-                            color: #333;
+                            color:$whiteColor;
                             font-weight: 600;
                             &:hover {
                                 color: $mainColor;
@@ -690,7 +691,7 @@
                             top: 90%;
                             left: auto;
                             right: 0;
-                            background-color: $whiteColor;
+                            background-color: $background;
                             width: 320px;
                             opacity: 0;
                             visibility: hidden;
@@ -711,6 +712,7 @@
                                         color: #333;
                                     }
                                     a {
+                                        color: white;
                                         font-size: 14px !important;
                                         vertical-align: top;
                                         padding: 0 !important;
@@ -728,6 +730,7 @@
                                     .cart_quanity {
                                         margin-top: px;
                                         font-weight: 500;
+                                        color: $whiteColor;
                                     }
                                 }
                             }
@@ -737,7 +740,9 @@
                                     padding: 10px 15px;
                                     font-weight: 600;
                                     text-align: right;
+                                    color: white;
                                     strong {
+                                        color: $whiteColor;
                                         float: left;
                                         font-weight: 600;
                                     }
@@ -748,11 +753,17 @@
                                     text-align: center;
                                     .view-cart,
                                     .checkout {
+
                                         padding: 8px 20px !important;
                                         border-radius: 40px;
                                         border: 1px solid #333;
                                         position: relative;
+                                        background-color: $whiteColor;
                                         color: rgb(68, 43, 43) !important;
+                                        &:hover{
+                                            color: $mainColor;
+                                            background-color: $background;
+                                        }
                                     }
                                     .checkout {
                                         border: 1px solid $mainColor;

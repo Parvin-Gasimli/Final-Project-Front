@@ -1268,12 +1268,13 @@ main .container .row .CategoryItem li a:hover {
   visibility: visible;
   -webkit-transform: scale(1) !important;
           transform: scale(1) !important;
+  background-color: #252A2C;
 }
 
 .bottom_header .container .bot_nav .bot_third .menu_search .menu_search-item a {
   padding: 22px 10px;
   font-size: 16px;
-  color: #333;
+  color: #ffff;
   font-weight: 600;
 }
 
@@ -1310,7 +1311,7 @@ main .container .row .CategoryItem li a:hover {
   top: 90%;
   left: auto;
   right: 0;
-  background-color: #ffff;
+  background-color: #252A2C;
   width: 320px;
   opacity: 0;
   visibility: hidden;
@@ -1339,6 +1340,7 @@ main .container .row .CategoryItem li a:hover {
 }
 
 .bottom_header .container .bot_nav .bot_third .menu_search .menu_search-item .cart_box .cart_list li a {
+  color: white;
   font-size: 14px !important;
   vertical-align: top;
   padding: 0 !important;
@@ -1359,6 +1361,7 @@ main .container .row .CategoryItem li a:hover {
 .bottom_header .container .bot_nav .bot_third .menu_search .menu_search-item .cart_box .cart_list li .cart_quanity {
   margin-top: px;
   font-weight: 500;
+  color: #ffff;
 }
 
 .bottom_header .container .bot_nav .bot_third .menu_search .menu_search-item .cart_box .cart_footer .cart_total {
@@ -1366,9 +1369,11 @@ main .container .row .CategoryItem li a:hover {
   padding: 10px 15px;
   font-weight: 600;
   text-align: right;
+  color: white;
 }
 
 .bottom_header .container .bot_nav .bot_third .menu_search .menu_search-item .cart_box .cart_footer .cart_total strong {
+  color: #ffff;
   float: left;
   font-weight: 600;
 }
@@ -1385,7 +1390,14 @@ main .container .row .CategoryItem li a:hover {
   border-radius: 40px;
   border: 1px solid #333;
   position: relative;
+  background-color: #ffff;
   color: #442b2b !important;
+}
+
+.bottom_header .container .bot_nav .bot_third .menu_search .menu_search-item .cart_box .cart_footer .cart_buttons .view-cart:hover,
+.bottom_header .container .bot_nav .bot_third .menu_search .menu_search-item .cart_box .cart_footer .cart_buttons .checkout:hover {
+  color: #ff324d;
+  background-color: #252A2C;
 }
 
 .bottom_header .container .bot_nav .bot_third .menu_search .menu_search-item .cart_box .cart_footer .cart_buttons .checkout {
