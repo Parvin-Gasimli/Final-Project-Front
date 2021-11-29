@@ -87,6 +87,15 @@ $('.multiple-items').slick({
     autoplay: true,
     autoplaySpeed: 2000,
   });
+  $('.multiple-items2').slick({
+    prevArrow: '<i class="fas fa-chevron-left left"></i>',
+    nextArrow: '<i class="fas fa-chevron-right right"></i>',
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1 ,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  });
 
 
 

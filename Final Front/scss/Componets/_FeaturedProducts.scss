@@ -1,0 +1,62 @@
+#FeaturedProducts {
+    .col-lg-3{
+       
+      padding-top: 20px;
+      width: 33%;
+    }
+    .FetureProduct {    width: 393px;
+      
+        box-shadow: 0px 1px 4px 0px grey;
+        display: flex;
+        .ProductData {
+            img {
+                width: 122px;
+                object-fit: cover;
+                padding: 16px 8px 16px 9px;
+
+                margin-right: 11px;
+            }
+        }
+    }
+    .ProductInfo {
+        h2 {
+            font-size: 16px;
+            margin-top: 25px;
+            transition: .3s linear;
+            &:hover{
+                color: $mainColor;
+                cursor: pointer;
+            }
+        }
+        .price {
+            display: flex;
+            margin-top: 12px;
+
+            span {
+                font-size: 14px;
+                font-weight: bold;
+                color: $mainColor;
+                margin-right: 5px;
+            }
+            del {
+                font-size: 14px;
+                margin-right: 5px;
+            }
+            p {
+                color: green;
+            }
+        }
+
+        .star {
+            margin-top: 5px;
+            display: flex;
+            i {font-size: 13px;
+                
+                color: goldenrod;
+            }
+            p{
+                margin-left: 20px;
+            }
+        }
+    }
+}
