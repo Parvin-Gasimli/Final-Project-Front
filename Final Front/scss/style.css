@@ -251,6 +251,35 @@ main .container .row .CategoryItem li a:hover {
   }
 }
 
+@media (max-width: 990px) {
+  nav .black .Category {
+    width: 190px;
+  }
+}
+
+@media (max-width: 1496px) {
+  nav .black #menus {
+    display: none;
+  }
+}
+
+@media (max-width: 610px) {
+  nav .black #menus {
+    display: block;
+    width: 100px;
+  }
+  nav .black #menus button i {
+    color: white;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 700px) {
+  nav .black .Category {
+    display: none;
+  }
+}
+
 @media (max-width: 999px) {
   .CategoryItem {
     display: none;
@@ -425,8 +454,8 @@ main .container .row .CategoryItem li a:hover {
 
 .background_bg {
   overflow: hidden;
-  -webkit-animation: ZoominOut 7s linear infinite;
-          animation: ZoominOut 7s linear infinite;
+  -webkit-animation: Zoomin 7s linear infinite;
+          animation: Zoomin 7s linear infinite;
 }
 
 .no-gutters {
@@ -1755,6 +1784,500 @@ main .container .row .CategoryItem li a:hover {
   #newCollection .banner .banner2 .Info span {
     font-size: 11px;
   }
+}
+
+#Sales {
+  padding-top: 90px;
+}
+
+#Sales img {
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 0.7;
+}
+
+#Sales img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 1;
+}
+
+.footer {
+  background-color: #252A2C;
+}
+
+.footer .container {
+  max-width: 1140px !important;
+}
+
+.footer .container .footer-top-part {
+  padding: 100px 0 70px;
+}
+
+.footer .container .footer-top-part .main-footer {
+  padding: 0 15px;
+}
+
+.footer .container .footer-top-part .main-footer .top-footer-info a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer .container .footer-top-part .main-footer .top-footer-info p {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 0;
+}
+
+.footer .container .footer-top-part .main-footer .social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .container .footer-top-part .main-footer .social-icons li {
+  display: inline-block;
+  padding-bottom: 5px;
+  padding: 0px 5px 5px 0;
+}
+
+.footer .container .footer-top-part .main-footer .social-icons li a {
+  color: white;
+  padding: 0;
+  font-size: 18px;
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.footer .container .footer-top-part .main-footer .social-icons li a:hover {
+  color: #ff324d;
+}
+
+.footer .container .footer-top-part .useful-links,
+.footer .container .footer-top-part .category,
+.footer .container .footer-top-part .my-account,
+.footer .container .footer-top-part .contact-info {
+  margin-bottom: 30px;
+  padding: 0 15px;
+  color: #fff;
+  text-align: left;
+}
+
+.footer .container .footer-top-part .useful-links h1,
+.footer .container .footer-top-part .useful-links h2,
+.footer .container .footer-top-part .useful-links h3,
+.footer .container .footer-top-part .useful-links h4,
+.footer .container .footer-top-part .category h1,
+.footer .container .footer-top-part .category h2,
+.footer .container .footer-top-part .category h3,
+.footer .container .footer-top-part .category h4,
+.footer .container .footer-top-part .my-account h1,
+.footer .container .footer-top-part .my-account h2,
+.footer .container .footer-top-part .my-account h3,
+.footer .container .footer-top-part .my-account h4,
+.footer .container .footer-top-part .contact-info h1,
+.footer .container .footer-top-part .contact-info h2,
+.footer .container .footer-top-part .contact-info h3,
+.footer .container .footer-top-part .contact-info h4 {
+  text-transform: capitalize;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  font-family: 'Roboto';
+  line-height: 1.2;
+}
+
+.footer .container .footer-top-part .useful-links .useful-listbox ul,
+.footer .container .footer-top-part .useful-links .category-listbox ul,
+.footer .container .footer-top-part .useful-links .account-listbox ul,
+.footer .container .footer-top-part .useful-links .contact-listbox ul,
+.footer .container .footer-top-part .category .useful-listbox ul,
+.footer .container .footer-top-part .category .category-listbox ul,
+.footer .container .footer-top-part .category .account-listbox ul,
+.footer .container .footer-top-part .category .contact-listbox ul,
+.footer .container .footer-top-part .my-account .useful-listbox ul,
+.footer .container .footer-top-part .my-account .category-listbox ul,
+.footer .container .footer-top-part .my-account .account-listbox ul,
+.footer .container .footer-top-part .my-account .contact-listbox ul,
+.footer .container .footer-top-part .contact-info .useful-listbox ul,
+.footer .container .footer-top-part .contact-info .category-listbox ul,
+.footer .container .footer-top-part .contact-info .account-listbox ul,
+.footer .container .footer-top-part .contact-info .contact-listbox ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .container .footer-top-part .useful-links .useful-listbox ul li,
+.footer .container .footer-top-part .useful-links .category-listbox ul li,
+.footer .container .footer-top-part .useful-links .account-listbox ul li,
+.footer .container .footer-top-part .useful-links .contact-listbox ul li,
+.footer .container .footer-top-part .category .useful-listbox ul li,
+.footer .container .footer-top-part .category .category-listbox ul li,
+.footer .container .footer-top-part .category .account-listbox ul li,
+.footer .container .footer-top-part .category .contact-listbox ul li,
+.footer .container .footer-top-part .my-account .useful-listbox ul li,
+.footer .container .footer-top-part .my-account .category-listbox ul li,
+.footer .container .footer-top-part .my-account .account-listbox ul li,
+.footer .container .footer-top-part .my-account .contact-listbox ul li,
+.footer .container .footer-top-part .contact-info .useful-listbox ul li,
+.footer .container .footer-top-part .contact-info .category-listbox ul li,
+.footer .container .footer-top-part .contact-info .account-listbox ul li,
+.footer .container .footer-top-part .contact-info .contact-listbox ul li {
+  padding-bottom: 10px;
+  list-style: none;
+  text-align: left;
+}
+
+.footer .container .footer-top-part .useful-links .useful-listbox ul li a,
+.footer .container .footer-top-part .useful-links .category-listbox ul li a,
+.footer .container .footer-top-part .useful-links .account-listbox ul li a,
+.footer .container .footer-top-part .useful-links .contact-listbox ul li a,
+.footer .container .footer-top-part .category .useful-listbox ul li a,
+.footer .container .footer-top-part .category .category-listbox ul li a,
+.footer .container .footer-top-part .category .account-listbox ul li a,
+.footer .container .footer-top-part .category .contact-listbox ul li a,
+.footer .container .footer-top-part .my-account .useful-listbox ul li a,
+.footer .container .footer-top-part .my-account .category-listbox ul li a,
+.footer .container .footer-top-part .my-account .account-listbox ul li a,
+.footer .container .footer-top-part .my-account .contact-listbox ul li a,
+.footer .container .footer-top-part .contact-info .useful-listbox ul li a,
+.footer .container .footer-top-part .contact-info .category-listbox ul li a,
+.footer .container .footer-top-part .contact-info .account-listbox ul li a,
+.footer .container .footer-top-part .contact-info .contact-listbox ul li a {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: .4s linear;
+  transition: .4s linear;
+}
+
+.footer .container .footer-top-part .useful-links .useful-listbox ul li a:hover,
+.footer .container .footer-top-part .useful-links .category-listbox ul li a:hover,
+.footer .container .footer-top-part .useful-links .account-listbox ul li a:hover,
+.footer .container .footer-top-part .useful-links .contact-listbox ul li a:hover,
+.footer .container .footer-top-part .category .useful-listbox ul li a:hover,
+.footer .container .footer-top-part .category .category-listbox ul li a:hover,
+.footer .container .footer-top-part .category .account-listbox ul li a:hover,
+.footer .container .footer-top-part .category .contact-listbox ul li a:hover,
+.footer .container .footer-top-part .my-account .useful-listbox ul li a:hover,
+.footer .container .footer-top-part .my-account .category-listbox ul li a:hover,
+.footer .container .footer-top-part .my-account .account-listbox ul li a:hover,
+.footer .container .footer-top-part .my-account .contact-listbox ul li a:hover,
+.footer .container .footer-top-part .contact-info .useful-listbox ul li a:hover,
+.footer .container .footer-top-part .contact-info .category-listbox ul li a:hover,
+.footer .container .footer-top-part .contact-info .account-listbox ul li a:hover,
+.footer .container .footer-top-part .contact-info .contact-listbox ul li a:hover {
+  color: #ff324d;
+}
+
+.footer .container .footer-top-part .useful-links .useful-listbox ul li a:hover p,
+.footer .container .footer-top-part .useful-links .useful-listbox ul li a:hover address,
+.footer .container .footer-top-part .useful-links .category-listbox ul li a:hover p,
+.footer .container .footer-top-part .useful-links .category-listbox ul li a:hover address,
+.footer .container .footer-top-part .useful-links .account-listbox ul li a:hover p,
+.footer .container .footer-top-part .useful-links .account-listbox ul li a:hover address,
+.footer .container .footer-top-part .useful-links .contact-listbox ul li a:hover p,
+.footer .container .footer-top-part .useful-links .contact-listbox ul li a:hover address,
+.footer .container .footer-top-part .category .useful-listbox ul li a:hover p,
+.footer .container .footer-top-part .category .useful-listbox ul li a:hover address,
+.footer .container .footer-top-part .category .category-listbox ul li a:hover p,
+.footer .container .footer-top-part .category .category-listbox ul li a:hover address,
+.footer .container .footer-top-part .category .account-listbox ul li a:hover p,
+.footer .container .footer-top-part .category .account-listbox ul li a:hover address,
+.footer .container .footer-top-part .category .contact-listbox ul li a:hover p,
+.footer .container .footer-top-part .category .contact-listbox ul li a:hover address,
+.footer .container .footer-top-part .my-account .useful-listbox ul li a:hover p,
+.footer .container .footer-top-part .my-account .useful-listbox ul li a:hover address,
+.footer .container .footer-top-part .my-account .category-listbox ul li a:hover p,
+.footer .container .footer-top-part .my-account .category-listbox ul li a:hover address,
+.footer .container .footer-top-part .my-account .account-listbox ul li a:hover p,
+.footer .container .footer-top-part .my-account .account-listbox ul li a:hover address,
+.footer .container .footer-top-part .my-account .contact-listbox ul li a:hover p,
+.footer .container .footer-top-part .my-account .contact-listbox ul li a:hover address,
+.footer .container .footer-top-part .contact-info .useful-listbox ul li a:hover p,
+.footer .container .footer-top-part .contact-info .useful-listbox ul li a:hover address,
+.footer .container .footer-top-part .contact-info .category-listbox ul li a:hover p,
+.footer .container .footer-top-part .contact-info .category-listbox ul li a:hover address,
+.footer .container .footer-top-part .contact-info .account-listbox ul li a:hover p,
+.footer .container .footer-top-part .contact-info .account-listbox ul li a:hover address,
+.footer .container .footer-top-part .contact-info .contact-listbox ul li a:hover p,
+.footer .container .footer-top-part .contact-info .contact-listbox ul li a:hover address {
+  color: #ff324d;
+}
+
+.footer .container .footer-top-part .useful-links .useful-listbox ul li a p,
+.footer .container .footer-top-part .useful-links .useful-listbox ul li a address,
+.footer .container .footer-top-part .useful-links .category-listbox ul li a p,
+.footer .container .footer-top-part .useful-links .category-listbox ul li a address,
+.footer .container .footer-top-part .useful-links .account-listbox ul li a p,
+.footer .container .footer-top-part .useful-links .account-listbox ul li a address,
+.footer .container .footer-top-part .useful-links .contact-listbox ul li a p,
+.footer .container .footer-top-part .useful-links .contact-listbox ul li a address,
+.footer .container .footer-top-part .category .useful-listbox ul li a p,
+.footer .container .footer-top-part .category .useful-listbox ul li a address,
+.footer .container .footer-top-part .category .category-listbox ul li a p,
+.footer .container .footer-top-part .category .category-listbox ul li a address,
+.footer .container .footer-top-part .category .account-listbox ul li a p,
+.footer .container .footer-top-part .category .account-listbox ul li a address,
+.footer .container .footer-top-part .category .contact-listbox ul li a p,
+.footer .container .footer-top-part .category .contact-listbox ul li a address,
+.footer .container .footer-top-part .my-account .useful-listbox ul li a p,
+.footer .container .footer-top-part .my-account .useful-listbox ul li a address,
+.footer .container .footer-top-part .my-account .category-listbox ul li a p,
+.footer .container .footer-top-part .my-account .category-listbox ul li a address,
+.footer .container .footer-top-part .my-account .account-listbox ul li a p,
+.footer .container .footer-top-part .my-account .account-listbox ul li a address,
+.footer .container .footer-top-part .my-account .contact-listbox ul li a p,
+.footer .container .footer-top-part .my-account .contact-listbox ul li a address,
+.footer .container .footer-top-part .contact-info .useful-listbox ul li a p,
+.footer .container .footer-top-part .contact-info .useful-listbox ul li a address,
+.footer .container .footer-top-part .contact-info .category-listbox ul li a p,
+.footer .container .footer-top-part .contact-info .category-listbox ul li a address,
+.footer .container .footer-top-part .contact-info .account-listbox ul li a p,
+.footer .container .footer-top-part .contact-info .account-listbox ul li a address,
+.footer .container .footer-top-part .contact-info .contact-listbox ul li a p,
+.footer .container .footer-top-part .contact-info .contact-listbox ul li a address {
+  color: #fff;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0;
+  vertical-align: middle;
+  max-width: 78%;
+  display: inline-block;
+}
+
+.footer .container .footer-top-part .useful-links .useful-listbox ul li a i,
+.footer .container .footer-top-part .useful-links .category-listbox ul li a i,
+.footer .container .footer-top-part .useful-links .account-listbox ul li a i,
+.footer .container .footer-top-part .useful-links .contact-listbox ul li a i,
+.footer .container .footer-top-part .category .useful-listbox ul li a i,
+.footer .container .footer-top-part .category .category-listbox ul li a i,
+.footer .container .footer-top-part .category .account-listbox ul li a i,
+.footer .container .footer-top-part .category .contact-listbox ul li a i,
+.footer .container .footer-top-part .my-account .useful-listbox ul li a i,
+.footer .container .footer-top-part .my-account .category-listbox ul li a i,
+.footer .container .footer-top-part .my-account .account-listbox ul li a i,
+.footer .container .footer-top-part .my-account .contact-listbox ul li a i,
+.footer .container .footer-top-part .contact-info .useful-listbox ul li a i,
+.footer .container .footer-top-part .contact-info .category-listbox ul li a i,
+.footer .container .footer-top-part .contact-info .account-listbox ul li a i,
+.footer .container .footer-top-part .contact-info .contact-listbox ul li a i {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 4px;
+  font-size: 18px;
+  vertical-align: top;
+}
+
+.footer .container .footer-top-part .useful-links .useful-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .useful-links .category-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .useful-links .account-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .useful-links .contact-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .category .useful-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .category .category-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .category .account-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .category .contact-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .my-account .useful-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .my-account .category-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .my-account .account-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .my-account .contact-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .contact-info .useful-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .contact-info .category-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .contact-info .account-listbox ul li a .fa-mobile-alt,
+.footer .container .footer-top-part .contact-info .contact-listbox ul li a .fa-mobile-alt {
+  margin-left: 3px;
+}
+
+.footer .container .footer-bottom-part {
+  padding: 30px 0;
+}
+
+.footer .container .footer-bottom-part p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .footer .container .footer-bottom-part p {
+    text-align: center;
+    padding: 15px 0;
+  }
+}
+
+.footer .container .footer-bottom-part .footer-payment {
+  padding: 0;
+  margin: 0;
+}
+
+.footer .container .footer-bottom-part .footer-payment li {
+  display: inline-block;
+}
+
+.subscribe {
+  padding-top: 60px;
+}
+
+.subscribe .subs-cont {
+  background-color: #ff324d;
+}
+
+.subscribe .subs-cont .nested-cont {
+  max-width: 1140px;
+}
+
+.subscribe .subs-cont .nested-cont .row {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 872px) {
+  .subscribe .subs-cont .nested-cont .row {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.subscribe .subs-cont .nested-cont .row .subs-text h1 {
+  font-weight: 700;
+  margin: 0;
+  text-transform: capitalize;
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+.subscribe .subs-cont .nested-cont .row .subs-form-box {
+  color: #646a7c;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.subscribe .subs-cont .nested-cont .row .subs-form-box .form-control {
+  color: #000;
+  height: 50px;
+  width: 100%;
+  padding: 8px 15px;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+.subscribe .subs-cont .nested-cont .row .subs-form-box .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 50px;
+  color: #495057;
+  background-color: #fff;
+  outline: 0;
+}
+
+.subscribe .subs-cont .nested-cont .row .subs-form-box .form-button {
+  width: 116px;
+  display: inline-block;
+  color: #fff;
+  background-color: #343a40;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  line-height: normal;
+  padding: 12px 0;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.subscribe .subs-cont .nested-cont .row .subs-form-box .form-button:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.subscribe .subs-cont .nested-cont .row .subs-form-box .form-button:hover {
+  color: #ff324d;
+}
+
+.partners .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 70px 0px 70px 0px;
+}
+
+.partners .partner-imagebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.partners .partner-imagebox .partner-item {
+  cursor: -webkit-grab;
+  cursor: grab;
+  position: relative;
+  margin: 10px;
+}
+
+.partners .partner-imagebox .partner-item img {
+  opacity: 0.7;
+  width: auto;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.partners .partner-imagebox .partner-item img:hover {
+  opacity: 1;
 }
 
 .slider {

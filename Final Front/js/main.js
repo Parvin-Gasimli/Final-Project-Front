@@ -21,6 +21,11 @@ Close.addEventListener("click",function(e){
     const div=document.querySelector(".modal-dialog")
     div.style.display = "none";
 })
+
+
+
+
+
 //back to top
 $(window).on("scroll", function (event) {
     if ($(this).scrollTop() > 600) {
