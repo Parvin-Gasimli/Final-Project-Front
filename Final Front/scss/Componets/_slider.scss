@@ -1,0 +1,125 @@
+.slider {
+    .img {
+        img {
+            position: relative;
+            max-width: 100%;
+        }
+    }
+
+    padding-top: 15px;
+    .slick-dots {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            width: 33px;
+            height: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            margin-right: 6px;
+        }
+    }
+    .right {
+        right: 78px;
+        font-size: 35px;
+        color: $mainColor;
+        top: 261px;
+
+        position: absolute;
+    }
+    .left {
+        position: absolute;
+        top: 261px;
+        left: 43px;
+        font-size: 35px;
+        z-index: 3;
+        color: $mainColor
+    }
+    .context {
+        display: inline-block;
+        left: 4%;
+        top: 22%;
+        position: absolute;
+        p {
+            font-size: 15px;
+        }
+        h2 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+        button {
+            background-color: $mainColor;
+            height: 50px;
+            width: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $mainColor;
+            transform: scale3d(1);
+            transition: 0.2s linear;
+            &:hover {
+                background-color: transparent;
+                transform: scale3d(1.03);
+            }
+        }
+    }
+    .content {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        display: inline-block;
+        p {
+            font-size: 15px;
+        }
+        h2 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+        button {
+            background-color: $mainColor;
+            height: 50px;
+            width: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $mainColor;
+            transform: scale3d(1);
+            transition: 0.2s linear;
+            &:hover {
+                background-color: transparent;
+                transform: scale3d(1.03);
+            }
+        }
+    }
+    .content2 {
+        position: absolute;
+        top: 30%;
+        left: 72%;
+        display: inline-block;
+        p {
+            font-size: 15px;
+        }
+        h2 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+        button {
+            background-color: $mainColor;
+            height: 50px;
+            width: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $mainColor;
+            transform: scale3d(1);
+            transition: 0.2s linear;
+            &:hover {
+                background-color: transparent;
+                transform: scale3d(1.03);
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+
+
+.subscribe_popup .modal-body {
+	padding: 0;
+}
+.subscribe_popup .modal-content {
+	border: 0;
+	border-radius: 0;
+}
+.popup_content {
+	padding: 50px;
+	text-align: center;
+	p {
+		color: darkgray;
+	}
+}
+.subscribe_popup .close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 9;
+	opacity: 1;
+	text-shadow: none;
+	width: 40px;
+	height: 40px;
+}
+.subscribe_popup .close i {
+	font-size: 40px;
+}
+.modal {
+	z-index: 99999;
+}
+.modal-body {
+	button {
+		border: none;
+		background: transparent;
+		&:focus {
+			box-shadow: none;
+		}
+	}
+	.close {
+		span {
+			i {
+				font-size: 23px;
+			}
+		}
+	}
+}
+.form-group {
+	button {
+		border: 1px solid #252323;
+		margin-top: 10px;
+		width: 100%;
+		background: #252323;
+		color: white;
+		font-weight: 500;
+		letter-spacing: 0.4px;
+		transition: 0.2s linear;
+		&:hover {
+			background-color: white;
+			color: #252323;
+		}
+	}
+}
+
+.background_bg {
+	overflow: hidden;
+	animation: ZoominOut 7s linear infinite;
+}
+.no-gutters {
+	overflow: hidden;
+}
+.form-group {
+	input {
+		&:focus {
+			box-shadow: none;
+		}
+	}
+}
+.chek-form{
+	margin-top: 10px;
+}
+
+@keyframes ZoominOut {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+}
+
+
+

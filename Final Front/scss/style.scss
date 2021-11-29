@@ -1,0 +1,27 @@
+@import'./Partial/Varaible';
+@import './Componets/Navbar';
+@import './Componets/Loader';
+@import './Componets/Subscribe';
+@import './Componets/header';
+
+@import './Componets/slider';
+@import './Componets/Product';
+@import './Componets/_addCart';
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+img{
+    width: 100%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}

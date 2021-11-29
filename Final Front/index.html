@@ -1,0 +1,2333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="lds-ellipsis">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="modal fade subscribe_popup" id="onload-popup" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="row no-gutters">
+                        <div class="col-sm-5">
+                            <div style="background-image: url(./images/popup_img.jpg);" class="background_bg h-100">
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="popup_content">
+                                <div class="popup-text">
+                                    <div class="heading_s4">
+                                        <h4>Subscribe and Get 25% Discount!</h4>
+                                    </div>
+                                    <p>Subscribe to the newsletter to receive updates about new products.</p>
+                                </div>
+                                <form method="post">
+                                    <div class="form-group">
+                                        <input name="email" required type="email" class="form-control rounded-0"
+                                            placeholder="Enter Your Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-fill-line btn-block text-uppercase rounded-0"
+                                            title="Subscribe" type="submit">Subscribe</button>
+                                    </div>
+                                </form>
+                                <div class="chek-form">
+                                    <div class="custome-checkbox">
+                                        <input class="form-check-input" type="checkbox" name="checkbox"
+                                            id="exampleCheckbox3" value="">
+                                        <label class="form-check-label" for="exampleCheckbox3"><span>Don't show this
+                                                popup again!</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="header fixed-top">   
+        <div class="top_header"> 
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 txt-left">
+                            <div class="country">
+                                <div class="countries-first">
+                                    <select name="countries_items">
+                                        <option value="en">English</option>
+                                        <option value="fn">France</option>
+                                        <option value="us">United States</option>
+                                    </select>
+                                </div>
+                                <div class="countries-second">
+                                    <div class="ddTitle borderRadiusTp">
+                                        <span class="divider"></span>
+                                        <span class="ddArrow arrowoff"></span>
+                                        <span class="ddTitleText ddcontries" id="msdrpdd20_title">
+                                            <img src="./images/English.png" class="fnone">
+                                            <span class="ddlabel">English</span>
+                                            <i class="fas fa-angle-down"></i>
+                                            <span class="description" style="display: none;">
+                                        </span>
+                                        </span>                                    
+                                    </div>
+                                    
+                                    <div class="countries_nav">
+                                        <ul class="countries_nav-item">
+                                            <li class="countries_item">
+                                                <img src="./images/English.png" alt="">
+                                                <span>English</span>
+                                            </li>
+                                            <li class="countries_item">
+                                                <img src="./images/Franche (1).png" alt="">
+                                                <span>France</span>
+                                            </li>
+                                            <li class="countries_item select">
+                                                <img src="./images/United.jfif" alt="">
+                                                <span>USA</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="money">
+                                <div class="countries-first">
+                                    <select name="countries_items">
+                                        <option value="en">GBR</option>
+                                        <option value="fn">USD</option>
+                                        <option value="us">EUR</option>
+                                    </select>
+                                </div>
+                                <div class="money-second">
+                                    <div class="ddTitle borderRadiusTp">
+                                        <span class="divider"></span>
+                                        <span class="ddArrow arrowoff"></span>
+                                        <span class="ddTitleText ddmoney" id="msdrpdd20_title">
+                                            <span class="ddlabel">USD</span>
+                                            <i class="fas fa-angle-down"></i>
+                                            <span class="description" style="display: none;">
+                                        </span>
+                                        </span>                                    
+                                    </div>
+                                    
+                                    <div class="money_nav">
+                                        <ul class="countries_nav-item">
+                                            <li class="money_item">
+                                                <span>USD</span>
+                                            </li>
+                                            <li class="money_item">
+                                                <span>EUR</span>
+                                            </li>
+                                            <li class="money_item select">
+                                                <span>GBR</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="phone">
+                                <li>
+                                    <i class="fas fa-mobile-alt"></i>                                    
+                                    <span>123-456-7890</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 txt-right">
+                            <div class="right text-md-right">
+                                <ul class="header_list">
+                                    <li>                                   
+                                        <a href="compare.html">
+                                            <i class="fas fa-random"></i>
+                                            <span>Compare</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="wishlist.html">
+                                            <i class="far fa-heart"></i>
+                                            <span>Wishlist</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">
+                                            <i class="far fa-user"></i>
+                                            <span>Login</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div> 
+            </div>          
+        </div>
+      
+     
+    </header>
+    <nav>
+        <div class="navbar">
+            <div class="black">
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-3">
+                            <button class="Category">
+                                <a href=""><i class="fas fa-bars"></i> All Categories </a>
+                            </button>
+
+
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="bottom_header">
+                                <div class="container">
+                                    <div class="bot_nav">
+                                       
+                                        <div class="bot_second">
+                                            <div class="list-item">
+                                                <ul class="menu_nav">
+                                                    <li class="menu_nav-item menu1 text-uppercase">
+                                                        <a href="#">Home<i class="fas fa-angle-down"></i></a>
+                                                        <div class="nav nav1">
+                                                            <ul>
+                                                                <li class="text-capitalize"><a href="./index.html"> Home</a></li>
+                                                               
+                                                            </ul>
+                                                        </div>
+                                                        
+                                                    </li>
+                                                    <li class="menu_nav-item menu2 text-uppercase">
+                                                        <a href="#">Pages<i class="fas fa-angle-down"></i></a>
+                                                        <div class="nav nav2">
+                                                            <ul>
+                                                                <li class="text-capitalize"><a href="#">about us</a></li>
+                                                                <li class="text-capitalize"><a href="#">contact us</a></li>
+                                                                <li class="text-capitalize"><a href="#">faq</a></li>
+                                                                <li class="text-capitalize"><a href="#">404 error page</a></li>
+                                                                <li class="text-capitalize"><a href="#">login</a></li>
+                                                                <li class="text-capitalize"><a href="#">register</a></li>
+                                                              
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu_nav-item-product menu3 text-uppercase product_item">
+                                                        <a href="#">Products<i class="fas fa-angle-down"></i></a>
+                                                        <div class="product_head-nav nav3">
+                                                            <ul class="product_nav">
+                                                                <li class="text-capitalize col-lg-3">
+                                                                    <ul>
+                                                                        <li class="txt-header">WOMAN'S</li>
+                                                                        <li><a href="./index.html" class="text-capitalize">Vestibulum Sed</a></li>
+                                                                        <li><a href="./index.html" class="text-capitalize">Donec Porttitor</a></li>
+                                                                        <li><a href="./index.html" class="text-capitalize">Donec Vitae Facilisis</a></li>
+                                                                        <li><a href="./index.html" class="text-capitalize">Curabitur Tempus</a></li>
+                                                                        <li><a href="./index.html" class="text-capitalize">Vivamus In Tortor</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="text-capitalize col-lg-3">
+                                                                    <ul>
+                                                                        <li class="txt-header">MEN'S</li>
+                                                                        <li><a href="./index.html" class="text-capitalize">Donec Vitae Ante Ante</a></li>
+                                                                       
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="text-capitalize col-lg-3">
+                                                                    <ul>
+                                                                        <li class="txt-header">KID'S</li>
+                                                                        <li><a href="./index.html" class="text-capitalize">Donec Vitae Ante Ante</a></li>
+                                                                       
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="text-capitalize col-lg-3">
+                                                                    <ul>
+                                                                        <li class="txt-header">ACCESSORIES'S</li>
+                                                                        <li><a href="./index.html" class="text-capitalize">Donec Vitae Ante Ante</a></li>
+                                                                        <li><a href="./index.html" class="text-capitalize">Etiam Ac Rutrum</a></li>
+                                                                      
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                         
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu_nav-item menu4 text-uppercase">
+                                                        <a href="#">Blogs<i class="fas fa-angle-down"></i></a>
+                                                        <div class="blogs_nav nav4">
+                                                            <ul>
+                                                                <li class="text-capitalize txt-blog bl1">
+                                                                    <a href="#">Grids <i class="fas fa-angle-right"></i></a>
+                                                                    <ul class="list">
+                                                                        <li class="list_item"><a href="#">3 Columns</a></li>
+                                                                        <li class="list_item"><a href="#">4 Columns</a></li>
+                                                                  
+                                                                        <li class="list_item"><a href="#">Right Sidebar</a></li>
+                                                                        <li class="list_item"><a href="#">Standard Left Sidebar</a></li>
+                                                                        <li class="list_item"><a href="#">Standard Right Sidebar</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="text-capitalize txt-blog bl2">
+                                                                    <a href="#">Masonry <i class="fas fa-angle-right"></i></a>
+                                                                    <ul class=" list_masonry">
+                                                                  
+                                                                        <li class="list_item"><a href="#">Left Sidebar</a></li>
+                                                                        <li class="list_item"><a href="#">Right Sidebar</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="text-capitalize txt-blog bl3">
+                                                                    <a href="#">Single Post <i class="fas fa-angle-right"></i></a>
+                                                                    <ul class=" list_sig">
+                                                                        <li class="list_item"><a href="#">Default</a></li>
+                                                                        <li class="list_item"><a href="#">Left Sidebar</a></li>
+                                                                        <li class="list_item"><a href="#">Slider Post</a></li>
+                                                                
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="text-capitalize txt-blog bl4">
+                                                                    <a href="#">List <i class="fas fa-angle-right"></i></a>
+                                                                    <ul class=" list_l">
+                                                                        <li class="list_item"><a href="#">Right Sidebar</a></li>
+                                                                        <li class="list_item"><a href="#">Left Sidebar</a></li>
+                                                                    </ul>
+                                                                </li>        
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu_nav-item-product menu5 text-uppercase product_item">
+                                                        <a href="#">Shop<i class="fas fa-angle-down"></i></a>
+                                                        <div class="product_head-nav nav5">
+                                                            <ul class="product_nav">
+                                                                <li class="text-capitalize col-lg-3">
+                                                                    <ul>
+                                                                        <li class="txt-header">SHOP PAGE LAYOUT</li>
+                                                                        <li><a href="#" class="text-capitalize">Shop List View</a></li>
+                                                                        <li><a href="#" class="text-capitalize">Shop List Left Sidebar</a></li>
+                                                                        <li><a href="#" class="text-capitalize">Shop List Right Sidebar</a></li>
+                                                                        <li><a href="#" class="text-capitalize">Left Sidebar</a></li>
+                                                                     
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="text-capitalize col-lg-3">
+                                                                    <ul>
+                                                                        <li class="txt-header">OTHER PAGES</li>
+                                                                        <li><a href="#" class="text-capitalize">Cart</a></li>
+                                                                        <li><a href="#" class="text-capitalize">Checkout</a></li>
+                                                                        <li><a href="#" class="text-capitalize">My Account</a></li>
+                                                                        <li><a href="#" class="text-capitalize">Wishlist</a></li>
+                                                                        <li><a href="#" class="text-capitalize">Compare</a></li>
+                                                                        <li><a href="#" class="text-capitalize">Order Completed</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li class="text-capitalize col-lg-3">
+                                                                    <ul>
+                                                                        <li class="txt-header">PRODUCT PAGES</li>
+                                                                        <li><a href="#" class="text-capitalize">Default</a></li>
+                                                                        <li><a href="#" class="text-capitalize">Left Sidebar</a></li>
+                                                                        <li><a href="#" class="text-capitalize">Right Sidebar</a></li>
+                                                                        <li><a href="#" class="text-capitalize">Thumbnails Left</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                              
+                                                            </ul>
+                                                            
+                                                        </div>
+                                                    </li>
+                                                    <li class="menu_nav-item menu6 text-uppercase">
+                                                        <a href="#">Contact us</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="bot_third search">
+                                            <ul class="menu_search">
+                                                <li class="menu_search-item-search " >
+                                                    <a href="#" class="search"><span class="lnr lnr-magnifier">
+                                                        <i class="fas fa-search"></i>
+                                                    </span></a>
+                                                    <div class="search_wrap">
+                                                        <span class="close-search">
+                                                            <i class="fas fa-times close"></i>
+                                                        </span>
+                                                        <form>
+                                                            <input type="text" placeholder="Search">
+                                                            <button type="submit" class="search_icon">
+                                                                <span class="lnr lnr-magnifier"></span>
+                                                            </button>
+                                                        </form>
+                                                    </div>
+                                                    <div class="search_overlay"></div>
+                                                </li>
+                                                <li class="menu_search-item">
+                                                    <a href="#" class="cart_link">
+                                                        <span class="lnr">
+                                                            <i class="fas fa-shopping-cart"></i>
+                                                        </span>
+                                                        <span class="cart_count">2</span>
+                                                    </a>
+                                                    <div class="cart_box">
+                                                        <ul class="cart_list">
+                                                            <li>
+                                                                <a href="#" class="remove"><i class="fas fa-times"></i></a>
+                                                                <a href="#">
+                                                                    <img src="./images/cart_thamb1.jpg" alt="">
+                                                                    Variable product 001
+                                                                </a>
+                                                                <span class="cart_quanity">
+                                                                    1x$81.00
+                                                                </span>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="remove"><i class="fas fa-times"></i></a>
+                                                                <a href="#">
+                                                                    <img src="./images/cart_thamb2.jpg" alt="">
+                                                                    Variable product 002
+                                                                </a>
+                                                                <span class="cart_quanity">
+                                                                    1x$78.00
+                                                                </span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="cart_footer">
+                                                            <p class="cart_total">
+                                                                <strong>Subtotal:</strong> 
+                                                                <span class="cart_price"> 
+                                                                    <span class="price_symbole">$</span>
+                                                                </span>
+                                                                159.00
+                                                            </p>
+                                                            <p class="cart_buttons">
+                                                                <a href="#" class="btn btn-fill-out btn-radius view-cart">
+                                                                    View Cart
+                                                                </a>
+                                                                <a href="#" class="btn btn-fill-out btn-radius checkout">
+                                                                    Checkout
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class=" header__icon">
+                                                <a href="#" class="icon" id="menu_btn">
+                                                  <i class="fa fa-bars"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-3">
+                    <ul class="CategoryItem">
+
+                        <li><img src="./images/young-woman.png" /> <a href=""> Woman's <i
+                                    class="fas fa-chevron-right"></i></a> </li>
+                        <li> <img src="./images/man.png" /> <a href="">Man's <i class="fas fa-chevron-right"></i> </a>
+                        </li>
+                        <li><img src="./images/children.png" /><a href=""> Kid's <i class="fas fa-chevron-right"></i>
+                            </a> </li>
+                        <li> <img src="./images/eyeglasses.png" /><a href=""> Accessories <i
+                                    class="fas fa-chevron-right"></i> </a></li>
+                        <li><img src="./images/fashion.png" /><a href=""> Clothing </a> </li>
+                        <li><img src="./images/shoes.png" /><a href=""> Shoes </a></li>
+                        <li> <img src="./images/wristwatch.png" /><a href="">Watches </a> </li>
+                        <li><img src="./images/necklace.png" /> <a href=""> Jewellery </a>
+                        </li>
+                        <li><img src="./images/personal-hygiene.png" /><a href=""> Health & Beautiy </a> </li>
+                        <li> <img src="./images/dress.png" /><a href="">SleapWear </a> </li>
+                        <br>
+
+                        <li> <img src="./images/man.png" /><a href=""> Seassonal Wear </a></li>
+                        <li><img src="./images/robe.png" /><a href=""> Ethinic Wear </a> </li>
+                        <li> <a href="" class="plus">More Categories<i class="fas fa-plus"></i> </a> </li>
+                        <li><img src="./images/ball.png" /><a href="">Bool </a> </li>
+                        <li><img src="./images/onesie.png" /><a href=""> Body Clothing </a></li>
+
+
+                    </ul>
+
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-6 col-9">
+                    <div class="slider">
+                        <div>
+                            <div class="img">
+                                <img src="./images/slider1.jpg" alt="">
+                            </div>
+
+                            <div class="context">
+                                <p>
+                                    Taking your Viewing Experience to Next Level
+                                </p>
+                                <h2>
+                                    Woman Fashion
+
+                                </h2>
+                                <button>Shop Now</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="img">
+                                <img src="./images/slider2.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <p>
+                                    50% off in all products
+                                </p>
+                                <h2>
+                                    Man Fashion
+                                </h2>
+                                <button>Shop Now</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="img">
+                                <img src="./images/slider3.jpg" alt="">
+                            </div>
+                            <div class="content2">
+                                <p>
+                                    Taking your Viewing Experience to Next Level
+                                </p>
+                                <h2>
+                                    Summer Sale
+                                </h2>
+                                <button>
+                                    Kid's Fashion
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>  <div class="profuct">
+            <div class="container">
+                <div class="header_product">
+                    <h3 class="text-capitalize">
+                        Exclusive Products
+                    </h3>
+                </div>
+                
+                <div class="toolbar">
+                    <ul class="nav" id="myTab" >
+                      <li>
+                        <button class="fil_btn fil-cat active" id="new-tab" href="#new"  data-toggle="tab"  role="tab" aria-controls="new" aria-selected="true">New Arrival</button>
+                      </li>
+                      <li>
+                        <button class="fil_btn fil-cat" id="best-tab" href="#best"  data-toggle="tab"  role="tab" aria-controls="best" aria-selected="true">Best Sellers</button>
+                      </li>
+                      <li>
+                        <button class="fil_btn fil-cat" id="feature-tab" href="#feature"  data-toggle="tab"  role="tab" aria-controls="feature" aria-selected="true">Featured</button>
+                      </li>
+                      <li>
+                        <button class="fil_btn fil-cat" id="special-tab" href="#special"  data-toggle="tab"  role="tab" aria-controls="special" aria-selected="true">Special Offer</button>
+                      </li>
+                    </ul> 
+                </div>
+
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="new-tab">
+                        <div class="row bottom_product">
+                   <div class="row">
+                       <div class="col-12 slidersItems">
+                        <div class="col-lg-3 col-md-4 col-6 portfolio_item">
+                            <div class="product_nav">
+                                <div class="product_img">
+                                    <a href="shop-product-detail.html">
+                                        <img src="./images/product_img2.jpg" alt="furniture_img1">
+                                    </a>
+                                    <div class="product_icon">
+                                        <ul class="pro_nav">
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-random"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                <i class="fas fa-search-plus"></i>
+                                            </a></li>
+                                        </ul>
+                                    </div>                      
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a href="shop-product-detail.html">Blue Dress For Woman</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">$45.00</span>
+                                        <del>$55.25</del>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="ratings">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                               
+                                        </div>
+                                        <span class="rating_num">(21)</span>
+                                    </div>
+                                    <div class="pr_desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                    </div>
+                                    <div class="choose_color">
+                                        <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                        <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                        <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                            <div class="product_nav">
+                                <div class="product_img">
+                                    <a href="shop-product-detail.html">
+                                        <img src="./images/product_img3.jpg" alt="furniture_img2">
+                                    </a>
+                                    <div class="product_icon">
+                                        <ul class="pro_nav">
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-random"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#"  class="info_pro2">
+                                                <i class="fas fa-search-plus"></i>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a href="shop-product-detail.html">Lether Gray Tuxedo</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">$55.00</span>
+                                        <del>$95.00</del>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="ratings">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                           
+                               
+                                        </div>
+                                        <span class="rating_num">(21)</span>
+                                    </div>
+                                    <div class="pr_desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                    </div>
+                                    <div class="choose_color">
+                                        <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                        <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                        <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                            <div class="product_nav">
+                                <span class="pr_flash">New</span>
+                                <div class="product_img">
+                                    <a href="shop-product-detail.html">
+                                        <img src="./images/product_img4.jpg" alt="furniture_img3">
+                                    </a>
+                                    <div class="product_icon">
+                                        <ul class="pro_nav">
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-random"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro2"> 
+                                                <i class="fas fa-search-plus"></i>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a href="shop-product-detail.html">Woman Full Sliv Dress</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">$68.00</span>
+                                        <del>$99.00</del>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="ratings">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                               
+                                        </div>
+                                        <span class="rating_num">(21)</span>
+                                    </div>
+                                    <div class="pr_desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                    </div>
+                                    <div class="choose_color">
+                                        <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                        <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                        <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                            <div class="product_nav">
+                                <div class="product_img">
+                                    <a href="shop-product-detail.html">
+                                        <img src="./images/product_img5.jpg" alt="furniture_img4">
+                                    </a>
+                                    <div class="product_icon">
+                                        <ul class="pro_nav">
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-random"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                <i class="fas fa-search-plus"></i>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a href="shop-product-detail.html">Light Blue Shirt</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">$69.00</span>
+                                        <del>$89.00</del>
+                                        <div class="on_sale">
+                                            <span>20% Off</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="ratings">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                               
+                                        </div>
+                                        <span class="rating_num">(21)</span>
+                                    </div>
+                                    <div class="pr_desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                    </div>
+                                    <div class="choose_color">
+                                        <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                        <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                        <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                            <div class="product_nav">
+                                <div class="product_img">
+                                    <a href="shop-product-detail.html">
+                                        <img src="./images/product_img6.jpg" alt="furniture_img5">
+                                    </a>
+                                    <div class="product_icon">
+                                        <ul class="pro_nav">
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-random"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                <i class="fas fa-search-plus"></i>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a href="shop-product-detail.html">Blue Dress For Woman</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">$69.00</span>
+                                        <del>$89.00</del>
+                                        <div class="on_sale">
+                                            <span>20% Off</span>
+                                        </div>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="ratings">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                               
+                                        </div>
+                                        <span class="rating_num">(21)</span>
+                                    </div>
+                                    <div class="pr_desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                    </div>
+                                    <div class="choose_color">
+                                        <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                        <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                        <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                            <div class="product_nav">
+                                <span class="pr_flash bg-danger">Hot</span>
+                                <div class="product_img">
+                                    <a href="shop-product-detail.html">
+                                        <img src="./images/product_img7.jpg" alt="furniture_img6">
+                                    </a>
+                                    <div class="product_icon">
+                                        <ul class="pro_nav">
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-random"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                <i class="fas fa-search-plus" ></i>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a href="shop-product-detail.html">Blue Casual Check Shirt</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">$45.00</span>
+                                        <del>$55.25</del>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="ratings">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                               
+                                        </div>
+                                        <span class="rating_num">(21)</span>
+                                    </div>
+                                    <div class="pr_desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                    </div>
+                                    <div class="choose_color">
+                                        <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                        <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                        <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                            <div class="product_nav">
+                                <span class="pr_flash bg-success">Sale</span>
+                                <div class="product_img">
+                                    <a href="shop-product-detail.html">
+                                        <img src="./images/product_img8.jpg" alt="furniture_img7">
+                                    </a>
+                                    <div class="product_icon">
+                                        <ul class="pro_nav">
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-random"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                <i class="fas fa-search-plus"></i>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a href="shop-product-detail.html">White Black Line Dress</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">$55.00</span>
+                                        <del>$95.00</del>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="ratings">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                               
+                                        </div>
+                                        <span class="rating_num">(21)</span>
+                                    </div>
+                                    <div class="pr_desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                    </div>
+                                    <div class="choose_color">
+                                        <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                        <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                        <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                            <div class="product_nav">
+                                <div class="product_img">
+                                    <a href="shop-product-detail.html">
+                                        <img src="./images/product_img9.jpg" alt="furniture_img8">
+                                    </a>
+                                    <div class="product_icon">
+                                        <ul class="pro_nav">
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                <i class="fas fa-random"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#">
+                                                <i class="far fa-heart"></i>
+                                            </a></li>
+                                            <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                <i class="fas fa-search-plus"></i>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="product_info">
+                                    <h6 class="product_title"><a href="shop-product-detail.html">Men Blue Jins Shirt</a></h6>
+                                    <div class="product_price">
+                                        <span class="price">$68.00</span>
+                                        <del>$99.00</del>
+                                    </div>
+                                    <div class="rating_wrap">
+                                        <div class="ratings">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <i class="far fa-star"></i>
+                               
+                                        </div>
+                                        <span class="rating_num">(21)</span>
+                                    </div>
+                                    <div class="pr_desc">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                    </div>
+                                    <div class="choose_color">
+                                        <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                        <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                        <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                   </div>
+                            
+                        </div>
+                    </div>
+                
+                
+                    <div class="tab-pane fade" id="best" role="tabpanel" aria-labelledby="best-tab">
+                        <div class="row bottom_product">
+                            
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_small_img1.jpg" alt="furniture_img2">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#"  class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Lether Gray Tuxedo</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$55.00</span>
+                                            <del>$95.00</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <span class="pr_flash bg-danger">Hot</span>
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img2.jpg" alt="furniture_img5">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Blue Dress For Woman</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$69.00</span>
+                                            <del>$89.00</del>
+                                            <div class="on_sale">
+                                                <span>20% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img3.jpg" alt="furniture_img6">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus" ></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Blue Casual Check Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <span class="pr_flash bg-success">Sale</span>
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img4.jpg" alt="furniture_img7">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">White Black Line Dress</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$55.00</span>
+                                            <del>$95.00</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img5.jpg" alt="furniture_img1">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>                      
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Light Blue Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img6.jpg" alt="furniture_img1">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>                      
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Light Blue Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <span class="pr_flash">New</span>
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img7.jpg" alt="furniture_img1">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>                      
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Light Blue Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <span class="pr_flash bg-danger">Hot</span>
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img8.jpg" alt="furniture_img1">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>                      
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Light Blue Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="tab-pane fade" id="feature" role="tabpanel" aria-labelledby="feature-tab">
+                        <div class="row bottom_product">
+                            <div class="col-lg-3 col-md-4 col-6 ">
+                                <div class="product_nav">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img9.jpg" alt="furniture_img1">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>                      
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Blue Dress For Woman</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3 col-md-4 col-6 ">
+                                <div class="product_nav">
+                                    <span class="pr_flash ">New</span>
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img6.jpg" alt="furniture_img3">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2"> 
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Woman Full Sliv Dress</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$68.00</span>
+                                            <del>$99.00</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 ">
+                                <div class="product_nav">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img4.jpg" alt="furniture_img4">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Light Blue Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$69.00</span>
+                                            <del>$89.00</del>
+                                            <div class="on_sale">
+                                                <span>20% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 ">
+                                <div class="product_nav">
+                                    <span class="pr_flash bg-success">Sale</span>
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img2.jpg" alt="furniture_img5">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Blue Dress For Woman</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$69.00</span>
+                                            <del>$89.00</del>
+                                            <div class="on_sale">
+                                                <span>20% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3 col-md-4 col-6 ">
+                                <div class="product_nav">
+                                    <span class="pr_flash bg-danger">Hot</span>
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img4.jpg" alt="furniture_img7">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">White Black Line Dress</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$55.00</span>
+                                            <del>$95.00</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3 col-md-4 col-6 ">
+                                <div class="product_nav">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img7.jpg" alt="furniture_img1">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>                      
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Light Blue Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 ">
+                                <div class="product_nav">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img9.jpg" alt="furniture_img1">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>                      
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Light Blue Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 ">
+                                <div class="product_nav">
+                                    <span class="pr_flash">Hot</span>
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img5.jpg" alt="furniture_img1">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>                      
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Light Blue Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                
+                    <div class="tab-pane fade" id="special" role="tabpanel" aria-labelledby="special-tab">
+                        <div class="row bottom_product">
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img12.jpg" alt="furniture_img1">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>                      
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Blue Dress For Woman</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img2.jpg" alt="furniture_img3">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2"> 
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Woman Full Sliv Dress</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$68.00</span>
+                                            <del>$99.00</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img5.jpg" alt="furniture_img5">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Blue Dress For Woman</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$69.00</span>
+                                            <del>$89.00</del>
+                                            <div class="on_sale">
+                                                <span>20% Off</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <span class="pr_flash">New</span>
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img8.jpg" alt="furniture_img8">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Men Blue Jins Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$68.00</span>
+                                            <del>$99.00</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item  ">
+                                <div class="product_nav">
+                                    <span class="pr_flash bg-danger">Hot</span>
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="images/product_img12.jpg" alt="furniture_img1">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>                      
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Light Blue Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img3.jpg" alt="furniture_img1">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>                      
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Light Blue Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <span class="pr_flash bg-success">Sale</span>
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img7.jpg" alt="furniture_img1">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>                      
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Light Blue Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 portfolio_item ">
+                                <div class="product_nav">
+                                    <div class="product_img">
+                                        <a href="shop-product-detail.html">
+                                            <img src="./images/product_img9.jpg" alt="furniture_img1">
+                                        </a>
+                                        <div class="product_icon">
+                                            <ul class="pro_nav">
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro1">
+                                                    <i class="fas fa-random"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#">
+                                                    <i class="far fa-heart"></i>
+                                                </a></li>
+                                                <li class="pro_nav-item"><a href="#" class="info_pro2">
+                                                    <i class="fas fa-search-plus"></i>
+                                                </a></li>
+                                            </ul>
+                                        </div>                      
+                                    </div>
+                                    <div class="product_info">
+                                        <h6 class="product_title"><a href="shop-product-detail.html">Light Blue Shirt</a></h6>
+                                        <div class="product_price">
+                                            <span class="price">$45.00</span>
+                                            <del>$55.25</del>
+                                        </div>
+                                        <div class="rating_wrap">
+                                            <div class="ratings">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                                <i class="far fa-star"></i>
+                                   
+                                            </div>
+                                            <span class="rating_num">(21)</span>
+                                        </div>
+                                        <div class="pr_desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.</p>
+                                        </div>
+                                        <div class="choose_color">
+                                            <span class="active color" data-color="#87554B" style="background-color: rgb(135, 85, 75);"></span>
+                                            <span data-color="#333333" style="background-color: rgb(51, 51, 51);" class="color"></span>
+                                            <span data-color="#DA323F" style="background-color: rgb(218, 50, 63);" class="color"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+               
+                
+            </div>
+        </div>
+
+
+        </section>
+
+     
+
+
+
+      
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- or -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    
+    <!-- isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<!-- or -->
+<script src="./js/isotope.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="./js/head.js"></script>
+
+</body>
+
+</html>
