@@ -1,28 +1,45 @@
-@import'./Partial/Varaible';
-@import './Componets/Navbar';
-@import './Componets/Loader';
-@import './Componets/Subscribe';
-@import './Componets/header';
-@import './Componets/Banner';
+@import "./Partial/Varaible";
+@import "./Componets/Navbar";
+@import "./Componets/Loader";
+@import "./Componets/Subscribe";
+@import "./Componets/header";
+@import "./Componets/Banner";
 
-@import './Componets/slider';
-@import './Componets/Product';
-@import './Componets/_addCart';
+@import "./Componets/slider";
+@import "./Componets/Product";
+@import "./Componets/_addCart";
 
-*{
-    font-family: 'Poppins', sans-serif;
+* {
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
 }
 
-
-img{
+img {
     width: 100%;
 }
-a{
+a {
     color: white;
     text-decoration: none;
 }
-ul{
+ul {
     list-style: none;
+}
+
+#back-to-top {
+    background-color: #171717;
+    bottom: 20px;
+    color: #fff;
+    display: none;
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    width: 40px;
+    z-index: 99;
+}
+#back-to-top a {
+    color: inherit;
 }

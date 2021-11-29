@@ -21,6 +21,14 @@ Close.addEventListener("click",function(e){
     const div=document.querySelector(".modal-dialog")
     div.style.display = "none";
 })
+//back to top
+$(window).on("scroll", function (event) {
+    if ($(this).scrollTop() > 600) {
+      $(".back-to-top").fadeIn(200);
+    } else {
+      $(".back-to-top").fadeOut(200);
+    }
+  });
 
 
 

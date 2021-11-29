@@ -1656,8 +1656,8 @@ main .container .row .CategoryItem li a:hover {
 }
 
 #newCollection .banner .singleBanner img {
-  -webkit-transition: .4s linear;
-  transition: .4s linear;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-animation: Zoomin 7s linear infinite;
@@ -1687,8 +1687,8 @@ main .container .row .CategoryItem li a:hover {
 }
 
 #newCollection .banner2 img {
-  -webkit-transition: .4s linear;
-  transition: .4s linear;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-animation: ZoominOut 7s linear infinite;
@@ -1728,6 +1728,32 @@ main .container .row .CategoryItem li a:hover {
   50% {
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #newCollection .banner .bannerInfo {
+    top: 65px;
+    position: absolute;
+    left: 188px;
+  }
+  #newCollection .banner .bannerInfo h3 {
+    font-size: 11px;
+  }
+  #newCollection .banner .bannerInfo h3 {
+    font-size: 15px;
+  }
+  #newCollection .banner .bannerInfo span {
+    font-size: 11px;
+  }
+  #newCollection .banner .banner2 .Info h1 {
+    font-size: 14sspx;
+  }
+  #newCollection .banner .banner2 .Info h3 {
+    font-size: 13px;
+  }
+  #newCollection .banner .banner2 .Info span {
+    font-size: 11px;
   }
 }
 
@@ -3315,7 +3341,7 @@ main .container .row .CategoryItem li a:hover {
 }
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -3331,5 +3357,24 @@ a {
 
 ul {
   list-style: none;
+}
+
+#back-to-top {
+  background-color: #171717;
+  bottom: 20px;
+  color: #fff;
+  display: none;
+  font-size: 24px;
+  height: 40px;
+  line-height: 40px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  width: 40px;
+  z-index: 99;
+}
+
+#back-to-top a {
+  color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
