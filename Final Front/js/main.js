@@ -143,3 +143,86 @@ $(window).on("scroll", function (event) {
 
 
 })(jQuery);
+let close = document.querySelectorAll('.close-zoom');
+close.forEach(function(item){
+    item.addEventListener('click', function(){
+        $('.zoomContainer').remove();
+    })
+})
+
+// let modal = document.querySelectorAll('.modal-dialog');
+//     modal.forEach(function(item){
+//         item.addEventListener('click', function(){
+//             $('.zoomContainer').remove();
+//         })
+//     })
+
+
+
+//Zoom
+$("#zoomModal").on('shown.bs.modal', function (){
+    $("#zoompro").elevateZoom({
+        gallery: "gallery",
+        galleryActiveClass: "active",
+        
+        easing: true,
+        zoomType: 'inner',
+        cursor: 'crosshair',
+    });
+});
+
+$("#zoompro2").elevateZoom({
+    gallery: "gallery",
+    galleryActiveClass: "active",
+    easing: true,
+    zoomType: 'inner',
+    cursor: 'crosshair',
+});
+
+//Rate
+let star = document.querySelectorAll(".star__item");
+star.forEach(function(item){
+    item.addEventListener('click', function(){
+        this.classList.add('active');
+        this.previousElementSibling.classList.add('active');
+        this.nextElementSibling.classList.remove('active');
+    })
+})
+
+// //Fancy Box
+// $(".box__btn").on("click", function () {
+//     // set gallery targets
+//     var gallery = [{
+//         href: "assets/images/product_img1.jpg"
+//     }, {
+//         href: "assets/images/product_img1-2.jpg"
+//     }, {
+//         href: "assets/images/product_img1-3.jpg"
+//     }, {
+//         href: "assets/images/product_img1-4.jpg"
+//     }];
+//     // triggers fancybox programmatically
+//     $.fancybox(gallery, {
+//         // API options here
+//     });
+//     return false; // prevents default and stops propagation 
+// });
+
+
+
+//Plus and Minus Product
+let plusBtn = document.querySelector(".quantity__plus");
+let minusBtn = document.querySelector(".quantity__minus");
+let input = document.querySelector(".quantity__qtn");
+plusBtn.addEventListener('click', function(){
+    input.value = parseInt(input.value) + 1;   
+})
+
+minusBtn.addEventListener('click', function(){
+    if(parseInt(input.value) > 1){
+        input.value = parseInt(input.value) - 1;   
+    }else{
+        input.value = parseInt(input.value) - 0; 
+    }   
+})
+
