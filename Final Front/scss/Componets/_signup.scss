@@ -1,0 +1,24 @@
+#Signup{
+    .col-xl-6{
+        box-shadow: 0px 0px 8px 1px grey;
+        height: 725px;
+        h3{
+            padding: 35px;
+        }
+        form {
+            .form-group {
+                .form-control {
+                    padding: 12px;
+                    margin-bottom: 36px;
+                    display: inline-block;
+                    &::placeholder {
+                        color: $mainColor;
+                    }
+                    &:focus::placeholder {
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+}

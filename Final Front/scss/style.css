@@ -6431,6 +6431,54 @@ nav .social a i:hover {
   margin-right: 10px;
 }
 
+#Signup .col-xl-6 {
+  -webkit-box-shadow: 0px 0px 8px 1px grey;
+          box-shadow: 0px 0px 8px 1px grey;
+  height: 725px;
+}
+
+#Signup .col-xl-6 h3 {
+  padding: 35px;
+}
+
+#Signup .col-xl-6 form .form-group .form-control {
+  padding: 12px;
+  margin-bottom: 36px;
+  display: inline-block;
+}
+
+#Signup .col-xl-6 form .form-group .form-control::-webkit-input-placeholder {
+  color: #ff324d;
+}
+
+#Signup .col-xl-6 form .form-group .form-control:-ms-input-placeholder {
+  color: #ff324d;
+}
+
+#Signup .col-xl-6 form .form-group .form-control::-ms-input-placeholder {
+  color: #ff324d;
+}
+
+#Signup .col-xl-6 form .form-group .form-control::placeholder {
+  color: #ff324d;
+}
+
+#Signup .col-xl-6 form .form-group .form-control:focus::-webkit-input-placeholder {
+  color: gray;
+}
+
+#Signup .col-xl-6 form .form-group .form-control:focus:-ms-input-placeholder {
+  color: gray;
+}
+
+#Signup .col-xl-6 form .form-group .form-control:focus::-ms-input-placeholder {
+  color: gray;
+}
+
+#Signup .col-xl-6 form .form-group .form-control:focus::placeholder {
+  color: gray;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
