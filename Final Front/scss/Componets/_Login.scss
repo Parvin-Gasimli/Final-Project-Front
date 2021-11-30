@@ -1,0 +1,100 @@
+.login,
+.register {
+    .container {
+        .col-md-6 {
+            box-shadow: 1px 0px 7px 0px;
+        }
+        max-width: 1140px !important;
+
+        .login-main {
+            padding: 100px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+
+            h1 {
+                font-family: "Roboto";
+                font-weight: 700;
+                margin: 0;
+                text-transform: capitalize;
+                font-size: 1.5rem;
+                margin-bottom: 20px;
+                color: #292b2c;
+                line-height: 1.2;
+                text-align: left;
+                padding: 24px 23px;
+            }
+
+            .form-group {
+                width: 100%;
+                &:not(.checkbox) {
+                    margin-bottom: 15px;
+                }
+                label {
+                    line-height: 26px;
+                    color: #646a7c;
+                    font-size: 14px;
+                    font-family: "Poppins", sans-serif;
+                }
+                input:not([type="checkbox"]) {
+                    color: #000;
+                    box-shadow: none;
+                    height: 50px;
+                    padding: 8px 15px;
+                    display: block;
+                    width: 100%;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    background-color: #fff;
+                    background-clip: padding-box;
+                    border: 1px solid #ced4da;
+                    border-radius: 0.25rem;
+                    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                }
+                .privacy-info {
+                    p {
+                        font-family: "Poppins", sans-serif;
+                        line-height: 26px;
+                        color: #646a7c;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 1.5;
+                    }
+                }
+                button {
+                    height: 40px;
+                    transition: 0.3s linear;
+                    letter-spacing: 1px;
+                    width: 90%;
+                    height: 51px;
+                    -webkit-transition: 0.3s linear;
+                    transition: 0.3s linear;
+                    letter-spacing: 1px;
+                    border-radius: 7px;
+                    border: 1px solid $mainColor;
+                    background-color: $mainColor;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+            .checkbox {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-content: center;
+                align-items: center;
+                .forgot-box {
+                    text-align: right;
+                    padding: 2px;
+                    a {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}

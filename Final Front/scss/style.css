@@ -6229,6 +6229,148 @@ nav .social a i:hover {
   color: #ff324d;
 }
 
+.login .container,
+.register .container {
+  max-width: 1140px !important;
+}
+
+.login .container .col-md-6,
+.register .container .col-md-6 {
+  -webkit-box-shadow: 1px 0px 7px 0px;
+          box-shadow: 1px 0px 7px 0px;
+}
+
+.login .container .login-main,
+.register .container .login-main {
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.login .container .login-main h1,
+.register .container .login-main h1 {
+  font-family: "Roboto";
+  font-weight: 700;
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #292b2c;
+  line-height: 1.2;
+  text-align: left;
+  padding: 24px 23px;
+}
+
+.login .container .login-main .form-group,
+.register .container .login-main .form-group {
+  width: 100%;
+}
+
+.login .container .login-main .form-group:not(.checkbox),
+.register .container .login-main .form-group:not(.checkbox) {
+  margin-bottom: 15px;
+}
+
+.login .container .login-main .form-group label,
+.register .container .login-main .form-group label {
+  line-height: 26px;
+  color: #646a7c;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.login .container .login-main .form-group input:not([type="checkbox"]),
+.register .container .login-main .form-group input:not([type="checkbox"]) {
+  color: #000;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 50px;
+  padding: 8px 15px;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.login .container .login-main .form-group .privacy-info p,
+.register .container .login-main .form-group .privacy-info p {
+  font-family: "Poppins", sans-serif;
+  line-height: 26px;
+  color: #646a7c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.login .container .login-main .form-group button,
+.register .container .login-main .form-group button {
+  height: 40px;
+  transition: 0.3s linear;
+  letter-spacing: 1px;
+  width: 90%;
+  height: 51px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  letter-spacing: 1px;
+  border-radius: 7px;
+  border: 1px solid #ff324d;
+  background-color: #ff324d;
+}
+
+.login .container .login-main .form-group button:hover,
+.register .container .login-main .form-group button:hover {
+  background-color: white;
+  color: black;
+}
+
+.login .container .login-main .checkbox,
+.register .container .login-main .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .container .login-main .checkbox .forgot-box,
+.register .container .login-main .checkbox .forgot-box {
+  text-align: right;
+  padding: 2px;
+}
+
+.login .container .login-main .checkbox .forgot-box a,
+.register .container .login-main .checkbox .forgot-box a {
+  color: #ff324d;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
