@@ -6623,6 +6623,126 @@ nav .social a i:hover {
   color: #ff324d;
 }
 
+.info {
+  padding-bottom: 70px;
+}
+
+.info .col-xl-4 .info__item {
+  -webkit-box-shadow: 0px 0px 3px -2px;
+          box-shadow: 0px 0px 3px -2px;
+  width: 320px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+  padding: 37px;
+  border-radius: 5px;
+}
+
+.info .col-xl-4 .info__item:hover i {
+  -webkit-transform: scale();
+          transform: scale();
+  background-color: #ff324d;
+  color: white;
+}
+
+.info .col-xl-4 .info__item .info__item-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info .col-xl-4 .info__item .info__item-icon i {
+  border-radius: 55%;
+  width: 67px;
+  height: 66px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  font-size: 38px;
+  border: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  overflow: hidden;
+}
+
+.info .col-xl-4 .info__item .info__item-text span {
+  margin-left: 83px;
+  padding: 15px 3px;
+}
+
+.info .col-xl-4 .info__item .info__item-text p {
+  margin-left: 55px;
+  margin-top: 16px;
+}
+
+.contact .contact__map {
+  width: 100%;
+  height: 100%;
+}
+
+.contact .contact__form-control {
+  padding: 15px 20px;
+  margin-bottom: 22px;
+}
+
+.contact .contact__form-control::-webkit-input-placeholder {
+  color: #ff324d;
+}
+
+.contact .contact__form-control:-ms-input-placeholder {
+  color: #ff324d;
+}
+
+.contact .contact__form-control::-ms-input-placeholder {
+  color: #ff324d;
+}
+
+.contact .contact__form-control::placeholder {
+  color: #ff324d;
+}
+
+.contact .contact__form-control:focus::-webkit-input-placeholder {
+  color: gray;
+  padding: 5px;
+}
+
+.contact .contact__form-control:focus:-ms-input-placeholder {
+  color: gray;
+  padding: 5px;
+}
+
+.contact .contact__form-control:focus::-ms-input-placeholder {
+  color: gray;
+  padding: 5px;
+}
+
+.contact .contact__form-control:focus::placeholder {
+  color: gray;
+  padding: 5px;
+}
+
+.contact textarea {
+  width: 92%;
+  height: 145px;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;

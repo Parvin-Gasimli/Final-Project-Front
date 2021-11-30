@@ -1,19 +1,17 @@
-const plus = document.querySelector(".plus");
+const pluses = document.querySelector(".plus");
 const CategoryItem = document.querySelector(".CategoryItem")
-plus.addEventListener("click", function (e) {
+pluses.addEventListener("click", function (e) {
     e.preventDefault();
-    // CategoryItem.style.height = "600px"
-    // CategoryItem.style.transition = '0.3s linear'
+ 
     console.log(CategoryItem.style.height);
     if (CategoryItem.style.height == "612px") {
         CategoryItem.style.height = "693px"
         CategoryItem.style.transition = '0.2s linear'
     } else {
         CategoryItem.style.height = "612px"
-        console.log("salam");
+     
     }
 })
-
 //Subscribe Close butoons js
 const Close = document.querySelector(".close");
 Close.addEventListener("click", function (e) {
