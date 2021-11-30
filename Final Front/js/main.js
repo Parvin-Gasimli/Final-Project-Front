@@ -15,13 +15,36 @@ plus.addEventListener("click", function (e) {
 })
 
 //Subscribe Close butoons js
-const Close=document.querySelector(".close");
-Close.addEventListener("click",function(e){
+const Close = document.querySelector(".close");
+Close.addEventListener("click", function (e) {
     e.preventDefault()
-    const div=document.querySelector(".modal-dialog")
+    const div = document.querySelector(".modal-dialog")
     div.style.display = "none";
 })
+//atibute
 
+const TabNavigations = Array.from(document.querySelectorAll(".nav li button"))
+const TabContext2 = Array.from(document.querySelectorAll("nav-tabContent .fade"))
+
+const ClearActive = () => {
+    TabNavigations.forEach(TabNavigations => {
+        TabNavigations.classList.remove("active")
+    });
+    TabContext2.forEach(TabContext => {
+        TabContext.classList.remove("active")
+    });
+}
+
+TabNavigations.forEach(TabNavigations => {
+  
+    TabNavigations.onclick = function () {
+        ClearActive();
+        const datatargetId = TabNavigations.getAttribute("data-target");
+        const targetContext = document.getElementById(datatargetId);
+        TabNavigations.classList.add("active")
+        tabContent.classList.add("active")
+    }
+})
 
 
 
@@ -29,138 +52,16 @@ Close.addEventListener("click",function(e){
 //back to top
 $(window).on("scroll", function (event) {
     if ($(this).scrollTop() > 600) {
-      $(".back-to-top").fadeIn(200);
+        $(".back-to-top").fadeIn(200);
     } else {
-      $(".back-to-top").fadeOut(200);
+        $(".back-to-top").fadeOut(200);
     }
-  });
-
-
-
-
-
-
-
-$('.slider').slick({
-    dots: true,
-    prevArrow: '<i class="fas fa-chevron-left left"></i>',
-    nextArrow: '<i class="fas fa-chevron-right right"></i>',
-    infinite: false,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1200,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 968,
-            settings: {
-                
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
 });
-$('.multiple-items').slick({
-    prevArrow: '<i class="fas fa-chevron-left left"></i>',
-    nextArrow: '<i class="fas fa-chevron-right right"></i>',
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 1 ,
-    autoplay: true,
-    autoplaySpeed: 2000,
-  });
-  $('.multiple-items2').slick({
-    prevArrow: '<i class="fas fa-chevron-left left"></i>',
-    nextArrow: '<i class="fas fa-chevron-right right"></i>',
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1 ,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 968,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
-  });
 
 
 
 
-$('.slider1').slick({
-    dots: true,
-    prevArrow: '<i class="fas fa-chevron-left left right"></i>',
-    nextArrow: '<i class="fas fa-chevron-right right" left></i>',
-    infinite: false,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1200,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-            }
-        },
-        {
-            breakpoint: 968,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-            }
-        }
-    ]
-});
+
 
 (function ($) {
     'use strict';
@@ -187,7 +88,7 @@ $('.slider1').slick({
     });
 
 
-    
+
 
 
     // //filter
@@ -220,21 +121,21 @@ $('.slider1').slick({
     //     }
 
     //   });
-    $(".menu_search-item-search").click(function(){
+    $(".menu_search-item-search").click(function () {
         $(".search_wrap").addClass("show");
         $(".search_overlay").addClass("show");
     });
-    
-    $(".close-search").click(function(e){
+
+    $(".close-search").click(function (e) {
         e.stopPropagation()
         $(".search_wrap").removeClass("show");
-        $(".search_overlay").removeClass("show");    
+        $(".search_overlay").removeClass("show");
     });
 
 
 
 
-     
+
 
 
 
