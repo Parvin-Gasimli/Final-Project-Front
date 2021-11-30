@@ -1,7 +1,7 @@
 .login {
     .col-xl-6 {
         box-shadow: 0px 0px 8px 1px grey;
-        height: 600px;
+        height: 555px;
     }
     .heading_s1 {
         padding: 30px;
@@ -25,6 +25,14 @@
                 }
                 &:focus::placeholder {
                     color: gray;
+                }
+            }
+            button{
+                &:hover{
+                    background-color: $mainColor;
+                    color: white;
+                    border: none;
+                    height: 40px;
                 }
             }
         }

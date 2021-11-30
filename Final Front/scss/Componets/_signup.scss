@@ -1,4 +1,10 @@
+#signNav{
+    position: fixed;
+}
+
 #Signup{
+
+
     .col-xl-6{
         box-shadow: 0px 0px 8px 1px grey;
         height: 725px;
@@ -18,6 +24,108 @@
                         color: gray;
                     }
                 }
+                button{
+                    height: 52px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .3s linear;
+                    overflow: hidden;
+                 
+                    &:hover{
+                        background-color: $mainColor;
+                        color: white;
+                        border: none;
+                       
+                    }
+                }
+            }
+        }
+    }
+    .different_login {
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 290px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            right: 0;
+            background: black;
+            border-top: 1px solid #ddd;
+            -moz-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        &::before {
+            background: black;
+            content: "";
+            width: 290px;
+            position: absolute;
+            left: 340px;
+            top: 49%;
+            right: 0;
+            border-top: 1px solid #ddd;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            z-index: 4;
+        }
+        span {
+            background-color: #fff;
+            padding: 15px 15px;
+
+            text-transform: uppercase;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+    }
+    .btn-login{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+       .btn-facebook {
+           margin-right: 40px;
+            width: 147px;
+            background: #3b5998;
+            border-color: #3b5998;
+            height: 44px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+           
+                i{
+                    margin-right: 10px;
+                }
+            
+        }
+        .btn-google{
+            width: 147px;
+            background: #d85040;
+            border-color: #d85040;
+            height: 44px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            i{
+                margin-right: 10px;
+            
+            }
+        }
+       
+    }
+    .form-note{
+        a{
+            color: black;
+            &:hover{
+                color: $mainColor;
             }
         }
     }
