@@ -55,4 +55,22 @@
         }
 
     }
+    h2{
+        margin-left: 50px;
+        color: $mainColor;
+        cursor: pointer;
+    }
+    .col-lg-9{
+        display:flex;
+        justify-content: end;
+        margin-left: -88px;
+    }
+    .deals{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 46px;
+    }
+    
+    
 }

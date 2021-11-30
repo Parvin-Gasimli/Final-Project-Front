@@ -45,7 +45,7 @@ TabNavigations.forEach(TabNavigations => {
         tabContent.classList.add("active")
     }
 })
-
+;
 
 
 
