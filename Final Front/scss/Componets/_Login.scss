@@ -33,21 +33,109 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .chek-form{
-          .custome-checkbox{
-              margin-left: 30px;
-              margin-bottom: 7px;
-          }
+        .chek-form {
+            .custome-checkbox {
+                margin-left: 30px;
+                margin-bottom: 7px;
+            }
         }
         a {
             text-decoration: none;
             color: black;
             margin-right: 13px;
             font-size: 15px;
-            transition: .3s linear;
-            &:hover{
+            transition: 0.3s linear;
+            &:hover {
                 color: $mainColor;
             }
         }
+    }
+    .form-note {
+        a {
+            color: black;
+            transition: 0.3s linear;
+            margin-left: 13px;
+            &:hover {
+                color: $mainColor;
+            }
+        }
+    }
+    .different_login {
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 290px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            right: 0;
+            background: black;
+            border-top: 1px solid #ddd;
+            -moz-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        &::before {
+            background: black;
+            content: "";
+            width: 290px;
+            position: absolute;
+            left: 340px;
+            top: 49%;
+            right: 0;
+            border-top: 1px solid #ddd;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            z-index: 4;
+        }
+        span {
+            background-color: #fff;
+            padding: 15px 15px;
+
+            text-transform: uppercase;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+    }
+    .btn-login{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+       .btn-facebook {
+           margin-right: 40px;
+            width: 147px;
+            background: #3b5998;
+            border-color: #3b5998;
+            height: 44px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+           
+                i{
+                    margin-right: 10px;
+                }
+            
+        }
+        .btn-google{
+            width: 147px;
+            background: #d85040;
+            border-color: #d85040;
+            height: 44px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            i{
+                margin-right: 10px;
+            }
+        }
+       
     }
 }

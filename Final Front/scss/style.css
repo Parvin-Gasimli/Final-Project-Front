@@ -6309,12 +6309,126 @@ nav .social a i:hover {
   color: black;
   margin-right: 13px;
   font-size: 15px;
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .login .login_footer a:hover {
   color: #ff324d;
+}
+
+.login .form-note a {
+  color: black;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  margin-left: 13px;
+}
+
+.login .form-note a:hover {
+  color: #ff324d;
+}
+
+.login .different_login {
+  position: relative;
+}
+
+.login .different_login::after {
+  content: "";
+  width: 290px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  right: 0;
+  background: black;
+  border-top: 1px solid #ddd;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.login .different_login::before {
+  background: black;
+  content: "";
+  width: 290px;
+  position: absolute;
+  left: 340px;
+  top: 49%;
+  right: 0;
+  border-top: 1px solid #ddd;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 4;
+}
+
+.login .different_login span {
+  background-color: #fff;
+  padding: 15px 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.login .btn-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.login .btn-login .btn-facebook {
+  margin-right: 40px;
+  width: 147px;
+  background: #3b5998;
+  border-color: #3b5998;
+  height: 44px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+}
+
+.login .btn-login .btn-facebook i {
+  margin-right: 10px;
+}
+
+.login .btn-login .btn-google {
+  width: 147px;
+  background: #d85040;
+  border-color: #d85040;
+  height: 44px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+}
+
+.login .btn-login .btn-google i {
+  margin-right: 10px;
 }
 
 * {
