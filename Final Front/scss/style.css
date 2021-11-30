@@ -6229,145 +6229,91 @@ nav .social a i:hover {
   color: #ff324d;
 }
 
-.login .container,
-.register .container {
-  max-width: 1140px !important;
+.login .col-xl-6 {
+  -webkit-box-shadow: 0px 0px 8px 1px grey;
+          box-shadow: 0px 0px 8px 1px grey;
+  height: 600px;
 }
 
-.login .container .col-md-6,
-.register .container .col-md-6 {
-  -webkit-box-shadow: 1px 0px 7px 0px;
-          box-shadow: 1px 0px 7px 0px;
+.login .heading_s1 {
+  padding: 30px;
 }
 
-.login .container .login-main,
-.register .container .login-main {
-  padding: 100px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.login .container .login-main h1,
-.register .container .login-main h1 {
-  font-family: "Roboto";
-  font-weight: 700;
-  margin: 0;
-  text-transform: capitalize;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #292b2c;
-  line-height: 1.2;
-  text-align: left;
-  padding: 24px 23px;
-}
-
-.login .container .login-main .form-group,
-.register .container .login-main .form-group {
-  width: 100%;
-}
-
-.login .container .login-main .form-group:not(.checkbox),
-.register .container .login-main .form-group:not(.checkbox) {
-  margin-bottom: 15px;
-}
-
-.login .container .login-main .form-group label,
-.register .container .login-main .form-group label {
-  line-height: 26px;
-  color: #646a7c;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-}
-
-.login .container .login-main .form-group input:not([type="checkbox"]),
-.register .container .login-main .form-group input:not([type="checkbox"]) {
-  color: #000;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  height: 50px;
-  padding: 8px 15px;
-  display: block;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-}
-
-.login .container .login-main .form-group .privacy-info p,
-.register .container .login-main .form-group .privacy-info p {
-  font-family: "Poppins", sans-serif;
-  line-height: 26px;
-  color: #646a7c;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.login .container .login-main .form-group button,
-.register .container .login-main .form-group button {
-  height: 40px;
-  transition: 0.3s linear;
-  letter-spacing: 1px;
-  width: 90%;
-  height: 51px;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
-  letter-spacing: 1px;
-  border-radius: 7px;
-  border: 1px solid #ff324d;
-  background-color: #ff324d;
-}
-
-.login .container .login-main .form-group button:hover,
-.register .container .login-main .form-group button:hover {
-  background-color: white;
+.login .heading_s1 h3 {
   color: black;
 }
 
-.login .container .login-main .checkbox,
-.register .container .login-main .checkbox {
+.login .heading_s1 h3 span {
+  color: #ff324d;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.login form .form-group .form-control {
+  padding: 12px;
+  margin-bottom: 36px;
+  display: inline-block;
+}
+
+.login form .form-group .form-control::-webkit-input-placeholder {
+  color: #ff324d;
+}
+
+.login form .form-group .form-control:-ms-input-placeholder {
+  color: #ff324d;
+}
+
+.login form .form-group .form-control::-ms-input-placeholder {
+  color: #ff324d;
+}
+
+.login form .form-group .form-control::placeholder {
+  color: #ff324d;
+}
+
+.login form .form-group .form-control:focus::-webkit-input-placeholder {
+  color: gray;
+}
+
+.login form .form-group .form-control:focus:-ms-input-placeholder {
+  color: gray;
+}
+
+.login form .form-group .form-control:focus::-ms-input-placeholder {
+  color: gray;
+}
+
+.login form .form-group .form-control:focus::placeholder {
+  color: gray;
+}
+
+.login .login_footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.login .container .login-main .checkbox .forgot-box,
-.register .container .login-main .checkbox .forgot-box {
-  text-align: right;
-  padding: 2px;
+.login .login_footer .chek-form .custome-checkbox {
+  margin-left: 30px;
+  margin-bottom: 7px;
 }
 
-.login .container .login-main .checkbox .forgot-box a,
-.register .container .login-main .checkbox .forgot-box a {
+.login .login_footer a {
+  text-decoration: none;
+  color: black;
+  margin-right: 13px;
+  font-size: 15px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.login .login_footer a:hover {
   color: #ff324d;
 }
 
