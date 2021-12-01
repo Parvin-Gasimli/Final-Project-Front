@@ -7250,15 +7250,60 @@ nav .social a i:hover {
   right: 30px;
 }
 
+.service {
+  padding-top: 40px;
+}
+
 .service .info .info-icon {
-  width: 50px;
-  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border: 1px solid #4b4a4a;
+  border-radius: 50%;
 }
 
 .service .info .info-icon img {
-  max-width: 100%;
+  width: 40px;
   -o-object-fit: cover;
      object-fit: cover;
+  object-fit: cover;
+}
+
+.service .info .info-content h6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 11px;
+}
+
+.service .info .info-content p {
+  color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 15px 88px;
 }
 
 * {
