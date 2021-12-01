@@ -8,6 +8,12 @@
             justify-content: center;
             align-items: center;
             text-transform: capitalize;
+            @media (max-width:400px) {
+                font-size: 20px;
+                font-weight: bold;
+                padding: 20px 1px;
+                
+            }
         }
     }
     .sliders6 {
@@ -24,6 +30,10 @@
                 justify-content: center;
                 align-items: center;
                 text-transform: capitalize;
+                @media (max-width:480px) {
+                    font-size: 12px;
+                    
+                }
             }
             }
             .info{

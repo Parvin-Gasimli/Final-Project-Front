@@ -14,8 +14,9 @@
         margin-bottom: 25px;
 
         @media(max-width:576px){
-            line-height: 24px;
+            line-height: 25px;
             margin-bottom: 15px;
+            font-size: 10px;
         }
 
         @media(max-width:460px){

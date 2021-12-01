@@ -6891,6 +6891,12 @@ nav .social a i:hover {
   cursor: pointer;
 }
 
+@media (max-width: 500px) {
+  .choose__item-icon i {
+    margin-top: 24px;
+  }
+}
+
 .choose__item-text h5 {
   color: #292b2c;
   text-transform: capitalize;
@@ -6915,6 +6921,12 @@ nav .social a i:hover {
 
 @media (max-width: 480px) {
   .choose__item-text p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .choose__item-text {
     font-size: 13px;
   }
 }
@@ -6967,8 +6979,9 @@ nav .social a i:hover {
 
 @media (max-width: 576px) {
   .about p {
-    line-height: 24px;
+    line-height: 25px;
     margin-bottom: 15px;
+    font-size: 10px;
   }
 }
 
@@ -7140,6 +7153,14 @@ nav .social a i:hover {
   text-transform: capitalize;
 }
 
+@media (max-width: 400px) {
+  .client2 .about-title h2 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 1px;
+  }
+}
+
 .client2 .sliders6 .slide-item .text {
   padding: 22px 3px;
   display: -webkit-box;
@@ -7166,6 +7187,12 @@ nav .social a i:hover {
       -ms-flex-align: center;
           align-items: center;
   text-transform: capitalize;
+}
+
+@media (max-width: 480px) {
+  .client2 .sliders6 .slide-item .text p {
+    font-size: 12px;
+  }
 }
 
 .client2 .sliders6 .slide-item .info {
@@ -7221,6 +7248,17 @@ nav .social a i:hover {
   position: absolute;
   top: 50%;
   right: 30px;
+}
+
+.service .info .info-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.service .info .info-icon img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 * {
