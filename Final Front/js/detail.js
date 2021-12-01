@@ -138,11 +138,6 @@ $( ".spinner-prev" ).click(function() {
     btn.children().css({"opacity":"1"});
   
   
-    $('.nested-image-box').izoomify({
-      url: value,
-      magnify: 1.7
-    
-    });
   });
   
   ///Change pictures by color control - Detail
@@ -160,11 +155,7 @@ $( ".spinner-prev" ).click(function() {
     var currentImageSrc = currentImage.attr("src");
     $(".imgBox img").attr("src", currentImageSrc);
   
-    $('.nested-image-box').izoomify({
-      url: currentImageSrc,
-      magnify: 1.7
     
-    });
   })
   
   ///Change detail product size

@@ -53,23 +53,24 @@ $(document).ready(function(){
         
     });
     
-        let nation = document.querySelectorAll(".countries_item");
-        let op_itemshow = document.querySelector(".ddcontries");
-        console.log(nation);
-        nation.forEach(function (item) {
-          item.addEventListener("click", function () {
-            op_itemshow.innerHTML = this.innerHTML+'<i class="fas fa-angle-down"></i>';
-          });
-        });
+    //eroor js
+        // let nation = document.querySelectorAll(".countries_item");
+        // let op_itemshow = document.querySelector(".ddcontries");
+        // console.log(nation);
+        // nation.forEach(function (item) {
+        //   item.addEventListener("click", function () {
+        //     op_itemshow.innerHTML = this.innerHTML+'<i class="fas fa-angle-down"></i>';
+        //   });
+        // });
         
-        let nation2 = document.querySelectorAll(".money_item");
-        let op_itemshow2 = document.querySelector(".ddmoney");
-        console.log(nation2);
-        nation2.forEach(function (item2) {
-        item2.addEventListener("click", function () {
-          op_itemshow2.innerHTML = this.innerHTML+'<i class="fas fa-angle-down"></i>';
-        });
-        });
+        // let nation2 = document.querySelectorAll(".money_item");
+        // let op_itemshow2 = document.querySelector(".ddmoney");
+        // console.log(nation2);
+        // nation2.forEach(function (item2) {
+        // item2.addEventListener("click", function () {
+        //   op_itemshow2.innerHTML = this.innerHTML+'<i class="fas fa-angle-down"></i>';
+        // });
+        // });
     
         // let nation3 = document.querySelectorAll(".img_item");
         // let op_itemshow3 = document.querySelector(".head_img");
@@ -95,6 +96,8 @@ $(document).ready(function(){
       e.preventDefault();
       $('html, body').animate({scrollTop:0}, '300');
     });
+
+ 
 
     
 })
