@@ -357,6 +357,7 @@
     }
     &.show {
         display: block;
+        
     }
 }
 .pro_overlay {
@@ -708,6 +709,13 @@
             }
         }
     }
+}
+.tab-content>.tab-pane{
+    display: none;
+}
+.tab-pane.active{
+    display: block;
+    opacity: 1 !important;
 }
 // .slidersItems{
 //     position: relative;

@@ -3398,6 +3398,15 @@ main .container .row .CategoryItem li a:hover {
   }
 }
 
+.tab-content > .tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+  opacity: 1 !important;
+}
+
 .sliders3 {
   position: relative;
 }
@@ -5156,6 +5165,15 @@ main .container .row .CategoryItem li a:hover {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+  opacity: 1 !important;
 }
 
 .sliders3 {

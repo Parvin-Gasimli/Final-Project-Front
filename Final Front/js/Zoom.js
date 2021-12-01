@@ -7,8 +7,11 @@ function magnify(imgID, zoom) {
     glass = document.createElement("DIV");
     glass.setAttribute("class", "img-magnifier-glass");
    
-    img.parentElement.insertBefore(glass, img);
+    if(img){
+      img.parentElement.insertBefore(glass, img);
+    }
 
+  if(glass){
     glass.style.backgroundImage = "url('" + img.src + "')";
     glass.style.backgroundRepeat = "no-repeat";
     glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
@@ -17,7 +20,10 @@ function magnify(imgID, zoom) {
     h = glass.offsetHeight / 2;
    
     glass.addEventListener("mousemove", moveMagnifier);
-    img.addEventListener("mousemove", moveMagnifier);
+  }
+ if(img){
+  img.addEventListener("mousemove", moveMagnifier);
+ }
     
     glass.addEventListener("touchmove", moveMagnifier);
     img.addEventListener("touchmove", moveMagnifier);

@@ -26,7 +26,7 @@ if(Close){
 //atibute
 
 const TabNavigations = Array.from(document.querySelectorAll(".nav .fil_btn"))
-const TabContext2 = Array.from(document.querySelectorAll("#nav-tabContent .tab-target"))
+const TabContext2 = Array.from(document.querySelectorAll("#nav-tabContent .tab-pane"))
 
 const ClearActive = () => {
     TabNavigations.forEach(TabNavigation=> {
