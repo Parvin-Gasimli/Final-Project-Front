@@ -1,0 +1,67 @@
+.client2 {
+    background-color: #fff1f1;
+    .about-title {
+        h2 {
+            font-size: 38px;
+            padding: 32px 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: capitalize;
+        }
+    }
+    .sliders6 {
+        .slide-item {
+            .text {
+                padding: 22px 3px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            p{
+                font-size: 14px;
+               width: 680px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-transform: capitalize;
+            }
+            }
+            .info{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .info-image{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 60px;
+                        object-fit: cover;
+                        height: 60px;
+                    }
+                }
+                .info-name{
+                    margin-left: 40px;
+                    span{
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+        .slide-item{
+            position: relative;
+            
+        }
+    }
+    .right{
+        position: absolute;
+        top: 50%;
+        left: 20px;
+    }
+    .left{
+        position: absolute;
+        top: 50%;
+        right: 30px;
+    }
+
+}

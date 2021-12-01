@@ -7121,6 +7121,108 @@ nav .social a i:hover {
   }
 }
 
+.client2 {
+  background-color: #fff1f1;
+}
+
+.client2 .about-title h2 {
+  font-size: 38px;
+  padding: 32px 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+}
+
+.client2 .sliders6 .slide-item .text {
+  padding: 22px 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client2 .sliders6 .slide-item .text p {
+  font-size: 14px;
+  width: 680px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+}
+
+.client2 .sliders6 .slide-item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client2 .sliders6 .slide-item .info .info-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client2 .sliders6 .slide-item .info .info-image img {
+  width: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 60px;
+}
+
+.client2 .sliders6 .slide-item .info .info-name {
+  margin-left: 40px;
+}
+
+.client2 .sliders6 .slide-item .info .info-name span {
+  color: #ff324d;
+}
+
+.client2 .sliders6 .slide-item {
+  position: relative;
+}
+
+.client2 .right {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+}
+
+.client2 .left {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;

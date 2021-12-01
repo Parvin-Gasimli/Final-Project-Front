@@ -236,8 +236,8 @@ $('.sliders4').slick({
 
 $('.sliders5').slick({
 
-    prevArrow: '<i class="fas fa-chevron-left left right"></i>',
-    nextArrow: '<i class="fas fa-chevron-right right" left></i>',
+    prevArrow: '<i class="fas fa-chevron-left  right"></i>',
+    nextArrow: '<i class="fas fa-chevron-right left" ></i>',
     infinite: false,
     speed: 300,
     slidesToShow: 5,
@@ -258,6 +258,43 @@ $('.sliders5').slick({
             breakpoint: 968,
             settings: {
                 slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 520,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+
+$('.sliders6').slick({
+
+    prevArrow: '<i class="fas fa-chevron-left right"></i>',
+    nextArrow: '<i class="fas fa-chevron-right  left"></i>',
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1200,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 968,
+            settings: {
+                slidesToShow: 3,
                 slidesToScroll: 1
             }
         },
