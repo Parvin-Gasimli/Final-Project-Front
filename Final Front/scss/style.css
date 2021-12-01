@@ -6473,10 +6473,6 @@ nav .social a i:hover {
   margin-right: 10px;
 }
 
-#signNav {
-  position: fixed;
-}
-
 #Signup .col-xl-6 {
   -webkit-box-shadow: 0px 0px 8px 1px grey;
           box-shadow: 0px 0px 8px 1px grey;
@@ -6776,6 +6772,353 @@ nav .social a i:hover {
 .contact textarea {
   width: 92%;
   height: 145px;
+}
+
+.faq .margin-top {
+  margin-top: 1.5rem;
+}
+
+.faq__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #292b2c;
+  margin-bottom: 45px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+  .faq__title {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .faq__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  .faq__title {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq__title {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.faq__list-item .item__faq:not([href]) {
+  color: #292b2c;
+  font-weight: 600;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 5px 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  cursor: pointer;
+  -webkit-transition: all, 0.3s, ease-in-out, 0s;
+  transition: all, 0.3s, ease-in-out, 0s;
+}
+
+.faq__list-item .item__faq:not([href]):hover {
+  color: #ff324d;
+}
+
+.faq__list-item .item__faq:not([href]) i.hide {
+  display: none;
+}
+
+.faq__list-item .item-answer {
+  padding-top: 14px;
+  display: none;
+}
+
+.faq__list-item .item-answer p {
+  color: gray;
+}
+
+.faq__list-item .item-answer.show {
+  display: block;
+}
+
+.choose {
+  background-color: #F4F9FC;
+}
+
+.choose .row {
+  padding: 87px;
+}
+
+.choose .row p {
+  color: gray;
+  font-size: 15px;
+}
+
+.choose__item {
+  padding-top: 40px;
+  background-color: #f7f8fb;
+  padding: 50px;
+  -webkit-box-shadow: 0px 0px 5px 0px;
+          box-shadow: 0px 0px 5px 0px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.choose__item-icon {
+  margin-bottom: 15px;
+}
+
+.choose__item-icon i {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  color: #ffff;
+  background-color: #ff324d;
+  font-size: 24px;
+  border-radius: 100%;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+.choose__item-text h5 {
+  color: #292b2c;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 1200px) {
+  .choose__item-text h5 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .choose__item-text h5 {
+    font-size: 16px;
+  }
+}
+
+.choose__item-text p {
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .choose__item-text p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .choose {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .choose {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .choose {
+    padding-bottom: 15px;
+  }
+  .choose .row {
+    padding: 0px;
+  }
+  .choose .choose__item {
+    padding: 0;
+    width: 208px;
+  }
+  .choose .choose__item-text p {
+    font-size: 10px;
+    padding: 15px;
+  }
+}
+
+.about {
+  padding-top: 40px;
+}
+
+.about__image {
+  margin-bottom: 1.5rem;
+}
+
+.about__heading {
+  margin-bottom: 25px;
+}
+
+.about p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 576px) {
+  .about p {
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 460px) {
+  .about p .about__img {
+    width: 252px;
+    margin-left: 39px;
+  }
+  .about p .about__heading p {
+    font-size: 12px;
+  }
+  .about p .about__heading h2 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+}
+
+.team {
+  padding-bottom: 70px;
+}
+
+@media (max-width: 576px) {
+  .team__item {
+    margin-bottom: 15px;
+  }
+}
+
+.team__item-image {
+  position: relative;
+}
+
+.team__item-image img {
+  width: 100%;
+}
+
+.team__item-image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: all, 0.5s, ease-in-out, 0s;
+  transition: all, 0.5s, ease-in-out, 0s;
+  z-index: 1;
+}
+
+.team__item-image .image__social {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 0;
+  right: 0;
+  left: -34px;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: all, 0.5s, ease-in-out, 0s;
+  transition: all, 0.5s, ease-in-out, 0s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.team__item-image .image__social-item {
+  display: inline-block;
+}
+
+.team__item-image .image__social-item .item__link {
+  display: inline-block;
+  background-color: #ffff;
+  color: #ff324d;
+  line-height: 36px;
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.team__item-image .image__social-item .item__link:hover {
+  color: #ffff;
+  background-color: #ff324d;
+}
+
+.team__item-content {
+  margin-top: 15px;
+}
+
+.team__item-content h5 {
+  font-size: 1.25rem;
+  color: #292b2c;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1200px) {
+  .team__item-content h5 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team__item-content h5 {
+    font-size: 16px;
+  }
+}
+
+.team__item-content span {
+  text-transform: capitalize;
+}
+
+@media (max-width: 480px) {
+  .team__item-content span {
+    font-size: 14px;
+  }
+}
+
+.team__item:hover .team__item-image::before {
+  opacity: 1;
+}
+
+.team__item:hover .image__social {
+  opacity: 1;
+  top: 50%;
+}
+
+@media (max-width: 1200px) {
+  .team {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .team {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .team {
+    padding-bottom: 15px;
+  }
 }
 
 * {
