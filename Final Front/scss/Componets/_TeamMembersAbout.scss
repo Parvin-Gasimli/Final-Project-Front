@@ -1,5 +1,23 @@
 .team {
     padding-bottom: 70px;
+    .about-title{
+        h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 46px;
+            text-transform: capitalize;
+            padding: 21px 20px;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 17px;
+            padding: 8px 37px 34px 84px;
+            line-height: 34px;
+        }
+    }
 
     &__item {
         @media (max-width: 576px) {
