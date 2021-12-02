@@ -68,6 +68,14 @@ TabNavigations.forEach(TabNavigation => {
 
 })
 
+//checkout
+$('.main__info-btn').click(function(){
+    $(this).parent().parent().siblings().slideToggle();
+})
+
+$('.main__checkbox').click(function(){
+    $(this).siblings('.main__form').slideToggle();
+})
 
 
 

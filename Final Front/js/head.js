@@ -35,6 +35,25 @@ $(document).ready(function(){
     $(".bl4").click(function(){
         $(".list_l").slideToggle(-10000000);
     });
+    $('.modal__main-check').click(function(){
+        $('.modal__main-check').toggleClass('checked');
+    });  
+
+    $('.actions__remember').click(function(){
+        $(this).toggleClass('checked');
+    })
+
+    $('.main__checkbox').click(function(){
+        $(this).toggleClass('checked');
+    })
+
+    $('.payment__item-checkbox').click(function(){
+        $(this).addClass('checked');
+        $('.payment__item-checkbox').not(this).removeClass('checked');
+
+        $(this).siblings().slideDown();
+        $('.payment__item-checkbox').not(this).siblings().slideUp();
+    })
 
     
 
