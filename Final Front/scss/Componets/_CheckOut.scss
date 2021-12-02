@@ -31,11 +31,10 @@
         }
     }
     .forminput {
-        h4{
+        h4 {
             text-transform: capitalize;
         }
         form {
-           
             input {
                 height: 50px;
                 display: block;
@@ -47,10 +46,8 @@
                 transition: border-color, 0.15s, ease-in-out, 0s;
 
                 &:focus {
-                    border-color: #67aefa;
-                 
+                    border-color: #67aefa !important;
                 }
-                
             }
             select {
                 width: 100%;
@@ -69,12 +66,12 @@
         padding: 30px;
         margin-top: 30px;
         display: none;
-        form{
-            input{
+        form {
+            input {
                 width: 100%;
                 padding: 8px;
                 margin-bottom: 14px;
-                &:focus{
+                &:focus {
                     border-color: rgb(156, 156, 247);
                 }
             }
@@ -96,21 +93,6 @@
                 font-size: 14px;
             }
         }
-
-        // input {
-        //     height: 50px;
-        //     display: block;
-        //     width: 100%;
-        //     margin-bottom: 1rem;
-        //     padding: 8px 15px;
-        //     border: 1px solid #ced4da;
-        //     border-radius: 0.25rem;
-        //     transition: border-color, 0.15s, ease-in-out, 0s;
-
-        //     &:focus {
-        //         border-color: #80bdff;
-        //     }
-        // }
 
         &-actions {
             display: flex;
@@ -486,5 +468,4 @@
             }
         }
     }
-
 }

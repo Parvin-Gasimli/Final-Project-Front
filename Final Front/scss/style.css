@@ -7937,7 +7937,7 @@ nav .social a i:hover {
 }
 
 .main .forminput form input:focus {
-  border-color: #67aefa;
+  border-color: #67aefa !important;
 }
 
 .main .forminput form select {
