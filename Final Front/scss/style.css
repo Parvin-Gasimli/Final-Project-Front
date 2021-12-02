@@ -7407,6 +7407,323 @@ nav .social a i:hover {
   }
 }
 
+.shop {
+  padding-top: 100px;
+}
+
+@media (max-width: 1200px) {
+  .shop {
+    padding-top: 80px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .shop {
+    padding-top: 50px 0;
+  }
+  .shop thead {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .shop {
+    padding-top: 30px 0;
+  }
+}
+
+.shop .table {
+  color: #292b2c;
+}
+
+.shop .table th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.shop .table th.shop__name {
+  text-align: left;
+}
+
+.shop .table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .shop .table td {
+    padding: 0.3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .shop .table td {
+    width: 100%;
+    display: block;
+    padding: 0.75rem;
+  }
+  .shop .table td::before {
+    content: attr(data-title) " ";
+    float: left;
+    text-transform: capitalize;
+    margin-right: 15px;
+    font-weight: bold;
+  }
+}
+
+.shop .table td.shop__name {
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .shop .table td.shop__name {
+    text-align: right;
+  }
+}
+
+.shop .table td.shop__name a {
+  color: black;
+  cursor: pointer;
+  -webkit-transition: all, 0.3s, ease-in-out, 0s;
+  transition: all, 0.3s, ease-in-out, 0s;
+}
+
+.shop .table td.shop__name a:hover {
+  color: #ff324d;
+}
+
+.shop .table td img {
+  max-width: 90px;
+}
+
+@media (max-width: 990px) {
+  .shop .table td img {
+    max-width: 78px;
+  }
+}
+
+.shop .table td.shop__total, .shop .table td.shop__price {
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .shop .table td.shop__total, .shop .table td.shop__price {
+    text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .shop .table td.shop__remove {
+    text-align: right;
+  }
+}
+
+.shop .table td.shop__remove i {
+  height: 30px;
+  width: 30px;
+  color: #ffff;
+  display: inline-block;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 14px;
+  background-color: black;
+}
+
+.shop .table td.shop__remove i:hover {
+  background-color: #ff324d;
+  color: #ffff;
+}
+
+.shop .table td .shop__coupon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .shop .table td .shop__coupon {
+    margin-bottom: 1rem;
+  }
+}
+
+.shop .table td .shop__coupon input {
+  height: 40px;
+  display: block;
+  width: 1%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 8px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-color: 0.15s, ease-in-out, 0s;
+}
+
+.shop .table td .shop__coupon input:focus {
+  border-color: #80bdff;
+}
+
+.shop .table td .shop__coupon-add .add__btn {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  background: transparent;
+  overflow: hidden;
+  text-align: center;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  z-index: 0;
+  cursor: pointer;
+  padding: 8px 11px;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 1px solid #ff324d;
+  color: black;
+  font-weight: bolder;
+}
+
+.shop .table td .shop__coupon-add .add__btn::after {
+  left: 0;
+  background-color: #ff324d;
+}
+
+.shop .table td .shop__coupon-add .add__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 51%;
+  right: 0;
+  background-color: #ff324d;
+}
+
+.shop .table td .shop__coupon-add .add__btn:hover {
+  color: #ff324d;
+}
+
+.shop .table td .shop__coupon-add .add__btn:hover::after, .shop .table td .shop__coupon-add .add__btn:hover::before {
+  width: 0;
+}
+
+.shop .table td .shop__update {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .shop .table td .shop__update {
+    text-align: left;
+  }
+}
+
+.shop .table td .shop__update-btn {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  background: transparent;
+  overflow: hidden;
+  text-align: center;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  z-index: 0;
+  cursor: pointer;
+  padding: 8px 11px;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  border: 1px solid #333;
+  color: #333;
+}
+
+.shop .table td .shop__update-btn::after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  z-index: -1;
+  left: -20px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.shop .table td .shop__update-btn::before {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-radius: 50%;
+  z-index: -1;
+  right: -20px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.shop .table td .shop__update-btn:hover {
+  color: #ff324d;
+}
+
+.shop .imgs {
+  margin: 0;
+  width: 138px;
+  height: 131px;
+  border: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+.shop .shop__quantity .spinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shop .shop__quantity .spinner .number-spinner {
+  width: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+  border-radius: 50%;
+  padding: 13px;
+  background-color: #ff324d;
+  border: none;
+  color: white;
+}
+
+.shop .butoons {
+  border: none;
+  border-radius: 50%;
+}
+
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;

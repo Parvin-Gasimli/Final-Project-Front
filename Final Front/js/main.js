@@ -15,12 +15,12 @@ if (pluses) {
     })
 }
 //Subscribe Close butoons js
-const Close = document.querySelector(".close");
-if (Close) {
-    Close.addEventListener("click", function (e) {
+var Closebuton = document.getElementsByClassName(".close")[0]
+if (Closebuton) {
+    Closebuton.addEventListener("click", function (e) {
         e.preventDefault()
-        const div = document.querySelector(".modal-dialog")
-        div.style.display = "none";
+        var divs = document.getElementsByClassName(".modal-dialog")[0]
+        divs.style.display ="none";
     })
 }
 //atibute
