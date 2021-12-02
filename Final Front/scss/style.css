@@ -7932,12 +7932,12 @@ nav .social a i:hover {
   padding: 8px 15px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  -webkit-transition: border-color, 0.15s, ease-in-out, 0s;
-  transition: border-color, 0.15s, ease-in-out, 0s;
+  -webkit-transition: border-color, 0.15s, ease-in-out;
+  transition: border-color, 0.15s, ease-in-out;
 }
 
 .main .forminput form input:focus {
-  border-color: #67aefa !important;
+  border-color: #67aefa;
 }
 
 .main .forminput form select {
@@ -8432,6 +8432,50 @@ nav .social a i:hover {
     font-size: 26px;
     padding: 0 25px;
   }
+}
+
+.section .error {
+  font-size: 143px;
+  font-weight: 500;
+}
+
+.section h5 {
+  font-size: 27px;
+  font-weight: 400;
+}
+
+.section p {
+  color: gray;
+}
+
+.section .search_form form {
+  position: relative;
+}
+
+.section .search_form form input {
+  padding: 5px;
+}
+
+.section .search_form form input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: rgba(132, 132, 252, 0.788);
+}
+
+.section .search_form form button {
+  top: 1px;
+  position: absolute;
+  right: 19px;
+}
+
+.section .search_form form button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.section a:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 * {

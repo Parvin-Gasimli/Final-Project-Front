@@ -1,0 +1,39 @@
+.section {
+    .error {
+        font-size: 143px;
+        font-weight: 500;
+    }
+    h5 {
+        font-size: 27px;
+        font-weight: 400;
+    }
+    p {
+        color: gray;
+    }
+    .search_form {
+        form {
+            position: relative;
+            input {
+                padding: 5px;
+                &:focus{
+                    box-shadow: none;
+                    border-color: rgba(132, 132, 252, 0.788);
+                }
+            }
+            button {
+                top: 1px;
+                position: absolute;
+                right: 19px;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
+       
+    }
+    a{
+        &:focus{
+            box-shadow: none;
+        }
+    }
+}
