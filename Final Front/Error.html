@@ -148,35 +148,57 @@
 
 
     </header>
-    <nav>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="logo">
-                        <img src="./images/logo_dark.png" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="detailsNav">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">WhistList</a></li>
-                        <li><a href="#">Details</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Shop</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <div class="social">
-                        <a href=""><i class="fas fa-search"></i></a>
-                        <a href=""> <i class="far fa-heart"></i></a>
-                    </div>
-                </div>
-
-            </div>
+    <nav class="navbar" id="secondnavbar">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="images/logo_dark.png" alt="">
         </div>
-    </nav>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li class="services">
+              <a href="/">Services</a>
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown">
+                <li><a href="/">Dropdown 1 </a></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 3</a></li>
+                <li><a href="/">Dropdown 4</a></li>
+              </ul>
+            </li>
+            <li><a href="/">Pricing</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="" ><i class="fas fa-search"></i> </a></li>
+            <li><a href="./shopCart.html">  <i class="far fa-heart"></i></a></li>
+        
+          </div>
+        </ul>
+      </nav>
+      <nav class="navbar navbar2">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="images/logo_dark.png" alt="">
+        </div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class=”menu”>...</div>
+        </ul>
+      </nav>
+    
+
+       
+    
 
     <main>
         <section class="bread-crumb">
