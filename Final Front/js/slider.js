@@ -1,7 +1,7 @@
 
 
 $('.slider').slick({
-    dots: true,
+    dots: false,
     prevArrow: '<i class="fas fa-chevron-left left"></i>',
     nextArrow: '<i class="fas fa-chevron-right right"></i>',
     infinite: false,

@@ -15,14 +15,17 @@ if (pluses) {
     })
 }
 //Subscribe Close butoons js
+
 var Closebuton = document.getElementsByClassName(".close")[0]
 if (Closebuton) {
+    // console.log("hi");
     Closebuton.addEventListener("click", function (e) {
         e.preventDefault()
         var divs = document.getElementsByClassName(".modal-dialog")[0]
         divs.style.display ="none";
     })
 }
+
 //atibute
 
 const TabNavigations = Array.from(document.querySelectorAll(".nav .fil_btn"))
