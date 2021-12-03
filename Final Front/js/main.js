@@ -88,6 +88,31 @@ $(window).on("scroll", function (event) {
     }
 });
 
+//Product list item in js Grid System grid addd col3 and list
+
+$('.right__view-icon').on('click',function() {
+    if ($(this).hasClass('grid')) {
+        $('.shop-container').removeClass('list').addClass('grid');
+        $(this).addClass('active').siblings().removeClass('active');
+    }
+    else if($(this).hasClass('list')) {
+        $('.shop-container').removeClass('grid').addClass('list');
+        $(this).addClass('active').siblings().removeClass('active');
+    }
+    $(".shop-container").append('<div class="loading"><div class="mfp-preloader"></div></div>');
+    setTimeout(function(){
+        $('.loading').remove();
+    }, 800);
+});
+//Product Color JS
+$('.info__switch-color span').each(function() {
+var get_color = $(this).attr('data-color');
+$(this).css("background-color", get_color);
+});
+
+$('.info__switch-color span,.product_size_switch span').on("click", function() {
+$(this).siblings(this).removeClass('active').end().addClass('active');
+});
 
 
 
