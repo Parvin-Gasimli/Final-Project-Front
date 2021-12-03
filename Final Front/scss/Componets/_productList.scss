@@ -5,14 +5,14 @@
         justify-content: space-between;
         -ms-flex-align: center;
         align-items: center;
-        @include max-breakpoint (575) {
+        @media (max-width:576px) {
             display: block;
         }
-        // &-left {}
+      
         &-right {
             display: flex;
             align-items: center;
-            @include max-breakpoint (575) {
+            @media( max-width:576px) {
                 justify-content: space-between;
                 margin-top: 15px;
             }
@@ -88,7 +88,7 @@
     .shop-container {
         position: relative;
         .col-6 {
-            @include max-breakpoint (480) {
+            @media (max-width:480px) {
                 max-width: 100%;
                 flex: 0 0 100%;
             }
@@ -114,7 +114,7 @@
             float: left;
             width: 100%;
             max-width: 280px;
-            @include max-breakpoint (767) {
+            @media(max-width:767px) {
                 float: none;
                 width: 100%;
                 max-width: 100%;
@@ -148,7 +148,7 @@
                         color: #FF324D;
                     }
                     i {
-                        @include max-breakpoint (380) {
+                        @media(max-width:400px) {
                             line-height: 27px;
                             font-size: 16px;
                         }
@@ -175,10 +175,10 @@
                     i {
                         margin-right: 10px;
                     }
-                    @include max-breakpoint(480) {
+                    @media(max-width:480px) {
                         padding: 12px 20px;
                     }
-                    @include max-breakpoint(380) {
+                    @media(max-width:380px) {
                         font-size: 14px;
                         padding: 10px 17px;
                     }
@@ -189,13 +189,13 @@
             overflow: hidden;
             text-align: left;
             padding: 15px 30px;
-            @include max-breakpoint (767) {
+            @media (max-width:767px) {
                 padding: 15px;
             }
             .info__title {
                 font-size: 20px;
                 margin-bottom: 15px;
-                @include max-breakpoint (480) {
+                @media(max-width:480px) {
                     font-size: 16px;
                     margin-bottom: 10px;
                 }
@@ -206,14 +206,14 @@
             }
             .info__price {
                 float: left;
-                @include max-breakpoint (480) {
+                @media (max-width:480px) {
                     float: none;
                 }
             }
             .info__rating {
                 display: block;
                 float: right;
-                @include max-breakpoint (480) {
+                @media(max-width:480px) {
                     float: none;
                     margin-bottom: 5px;
                 }
@@ -225,11 +225,11 @@
                 margin-bottom: 10px;
                 min-height: 58px;
                 max-height: 84px;
-                @include max-breakpoint (1199) {
+                @media (max-width:1199px) {
                     min-height: 56px;
                     max-height: 76px;
                 }
-                @include max-breakpoint (480) {
+                @media (max-width:480px) {
                     min-height: 50px;
                     max-height: 50px;
                 }
