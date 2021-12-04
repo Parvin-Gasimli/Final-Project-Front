@@ -1626,6 +1626,90 @@ main .container .row .CategoryItem li a:hover {
   background-color: #252A2C;
 }
 
+.header2 {
+  padding-top: 20px;
+}
+
+.header2 .logoicon img {
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header2 .custom_selects select {
+  padding: 6px;
+}
+
+.header2 .input-group input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.header2 .input-group input:focus::-webkit-input-placeholder {
+  margin-right: 5px;
+  color: #ff324d;
+}
+
+.header2 .input-group input:focus:-ms-input-placeholder {
+  margin-right: 5px;
+  color: #ff324d;
+}
+
+.header2 .input-group input:focus::-ms-input-placeholder {
+  margin-right: 5px;
+  color: #ff324d;
+}
+
+.header2 .input-group input:focus::placeholder {
+  margin-right: 5px;
+  color: #ff324d;
+}
+
+.header2 .input-group .search_btn {
+  width: 80px;
+  border: none;
+  background: #ff324d;
+  color: white;
+}
+
+.header2 .input-group .search_btn:focus {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.header2 .contactlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header2 .contactlogo a {
+  color: black;
+  margin-right: 12px;
+  font-size: 24px;
+}
+
+.header2 .contactlogo a i {
+  color: #ff324d;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.header2 .contactlogo a i:hover {
+  color: black;
+}
+
+.header2 .contactlogo p {
+  margin: 0;
+}
+
 @-webkit-keyframes slideinLeft {
   from {
     opacity: 0;
@@ -3558,10 +3642,10 @@ main .container .row .CategoryItem li a:hover {
   height: auto;
   display: block;
   border-radius: .25rem;
-  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
 @media (max-width: 443px) {
@@ -3623,10 +3707,10 @@ main .container .row .CategoryItem li a:hover {
   height: auto;
   display: block;
   border-radius: .25rem;
-  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
 @media (max-width: 443px) {

@@ -16,13 +16,15 @@ if (pluses) {
 }
 //Subscribe Close butoons js
 
-var Closebuton = document.getElementsByClassName(".close")[0]
+var Closebuton = document.getElementsByClassName("close")[0]
 if (Closebuton) {
     // console.log("hi");
     Closebuton.addEventListener("click", function (e) {
+        // console.log("salam");
         e.preventDefault()
-        var divs = document.getElementsByClassName(".modal-dialog")[0]
+        var divs = document.getElementsByClassName("modal-dialog")[0]
         divs.style.display ="none";
+      
     })
 }
 
