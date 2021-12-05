@@ -44,7 +44,7 @@ function fillCard(){
                     ${elem.name}
                 </a>
                 <span class="cart_quanity">
-                    ${elem.count}*${elem.price}
+                    ${elem.count}X ${elem.price+"$"}
                 </span> 
             </li>
             `
@@ -79,10 +79,16 @@ function addedSpecificValues(){
     document.querySelector('.total_price').innerText = getSpecificValues().sum;
 }
 
-let toast = document.getElementById("toast");
-document.getElementById("show-toast").addEventListener("click", function () {
-  toast.classList.add("toast-active");
-});
-document.getElementById("close-button").addEventListener("click", function () {
-  toast.classList.remove("toast-active");
-});
+//sweet code>>))) 
+//sweet toast in jsss
+
+const toasticon=Array.from(document.querySelectorAll(".info_pro1"))
+toasticon.forEach(elem=>{
+    elem.addEventListener("click",function(){
+        var x = document.getElementById("toast")
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 6000);
+    })
+})
+
+
