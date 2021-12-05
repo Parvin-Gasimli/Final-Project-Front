@@ -2,7 +2,8 @@
 let cardIcons = Array.from(document.querySelectorAll('.info_pro1'));
 
 let basketProducts = (localStorage.getItem('basket')==null)?[]:JSON.parse(localStorage.getItem('basket'));
-console.log(basketProducts);
+
+fillCard();
 
 cardIcons.forEach(elem=>{
     elem.addEventListener('click',function(e){
@@ -11,12 +12,14 @@ cardIcons.forEach(elem=>{
         let productInfo = Array.from(document.querySelectorAll('.product_info')).find(x=>x.getAttribute('data-productId')==productId);
         let name = productInfo.querySelector('.product_title a').innerText;
         let price = productInfo.querySelector('span.price').innerText;
+        let img = productInfo.previousElementSibling.querySelector('img').getAttribute('src');
         let productBasket = basketProducts.find(x=>x.id==productId);
         if(productBasket===undefined){
             let productBasket = {
                 id:productId,
                 name:name,
-                price:price,
+                image:img,
+                price:price.slice(1),
                 count:1
             }
             basketProducts.push(productBasket);
@@ -30,14 +33,14 @@ cardIcons.forEach(elem=>{
 
 function fillCard(){
     document.querySelector('.cart_list').innerHTML="";
-    JSON.parse(localStorage.getItem('basket')).forEach(elem=>{
+    basketProducts.forEach(elem=>{
         document.querySelector('.cart_list').innerHTML+= 
             `
             <li>
-                <a href="#" class="remove"><i
+                <a href="#" class="remove" data-productId=${elem.id}><i
                         class="fas fa-times"></i></a>
                 <a href="#">
-                    <img src="./images/cart_thamb1.jpg" alt="">
+                    <img src="${elem.image}" alt="">
                     ${elem.name}
                 </a>
                 <span class="cart_quanity">
@@ -46,6 +49,33 @@ function fillCard(){
             </li>
             `
         });
-}
-fillCard();
+        let removeButtons = Array.from(document.querySelectorAll('.cart_list .remove'));
+        removeButtons.forEach(elem=>{
+            elem.addEventListener('click',function(){
+                let productId=elem.getAttribute('data-productId');
+                basketProducts=basketProducts.filter(x=>x.id!=productId);
+                localStorage.setItem('basket',JSON.stringify(basketProducts));
+                elem.parentElement.remove();
+                addedSpecificValues();
+            })
+        })
 
+    addedSpecificValues();
+}
+function getSpecificValues(){
+    let sum=0;
+    basketProducts.forEach(elem=>{
+        sum+=(+elem.count * +elem.price);
+    })
+    return {
+        sum : sum,
+        len : basketProducts.length
+    };
+}
+
+function addedSpecificValues(){
+    document.querySelector('.cart_count').innerText = getSpecificValues().len;
+    document.querySelector('.total_price').innerText = getSpecificValues().sum;
+}
+
+// bu qeder sirin))) oprem sirinnnnn
