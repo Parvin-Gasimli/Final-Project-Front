@@ -8,8 +8,11 @@ fillCard();
 cardIcons.forEach(elem=>{
     elem.addEventListener('click',function(e){
         e.preventDefault();
+        e.stopPropagation();
         let productId = elem.getAttribute('data-productId');
         let productInfo = Array.from(document.querySelectorAll('.product_info')).find(x=>x.getAttribute('data-productId')==productId);
+        
+        // console.log(productId);
         let name = productInfo.querySelector('.product_title a').innerText;
         let price = productInfo.querySelector('span.price').innerText;
         let img = productInfo.previousElementSibling.querySelector('img').getAttribute('src');
@@ -32,7 +35,8 @@ cardIcons.forEach(elem=>{
 })
 
 function fillCard(){
-    document.querySelector('.cart_list').innerHTML="";
+    if(document.querySelector('.cart_list')!=null){
+        document.querySelector('.cart_list').innerHTML="";
     basketProducts.forEach(elem=>{
         document.querySelector('.cart_list').innerHTML+= 
             `
@@ -58,10 +62,13 @@ function fillCard(){
                 // elem.count--;
                 elem.parentElement.remove();
                 addedSpecificValues();
+                confirm("Mehsulu silmek Istediyinize eminsinizmi");
             })
+            
         })
 
     addedSpecificValues();
+    }
 }
 function getSpecificValues(){
     let sum=0;
@@ -90,5 +97,33 @@ toasticon.forEach(elem=>{
         setTimeout(function(){ x.className = x.className.replace("show", ""); }, 6000);
     })
 })
+
+
+
+// //darkMode but don't runmm
+
+
+// function toggle_light_mode() {
+//     var app = document.getElementsByTagName("BODY")[0];
+//     if (localStorage.lightMode == "dark") {
+//         localStorage.lightMode = "light";
+//         app.setAttribute("light-mode", "light");
+//     } else {
+//         localStorage.lightMode = "dark";
+//         app.setAttribute("light-mode", "dark");
+//     }
+// }
+
+// window.addEventListener(
+//     "storage",
+//     function () {
+//         if (localStorage.lightMode == "dark") {
+//             app.setAttribute("light-mode", "dark");
+//         } else {
+//             app.setAttribute("light-mode", "light");
+//         }
+//     },
+//     false
+// );
 
 

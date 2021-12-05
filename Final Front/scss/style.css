@@ -1486,6 +1486,11 @@ main .container .row .CategoryItem li a:hover {
   background-color: #333 !important;
 }
 
+.bottom_header .container .bot_nav .bot_third .menu_search .menu_search-item-search .lnr-magnifier i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
 .bottom_header .container .bot_nav .bot_third .menu_search .menu_search-item-search a {
   color: #333;
   -webkit-transition: all 0.2s linear;
@@ -1569,6 +1574,17 @@ main .container .row .CategoryItem li a:hover {
   display: block;
   -webkit-animation: slideInLeft 1s both;
           animation: slideInLeft 1s both;
+}
+
+.bottom_header .container .bot_nav .whistList a i {
+  font-size: 20px;
+  margin-right: 5px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.bottom_header .container .bot_nav .whistList a i:hover {
+  color: #ff324d;
 }
 
 .bot_second .list-item .menu_nav i {

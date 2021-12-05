@@ -783,6 +783,12 @@
                         }
                     }
                     .menu_search-item-search {
+                        .lnr-magnifier {
+                            i {
+                                font-size: 20px;
+                                margin-right: 10px;
+                            }
+                        }
                         a {
                             color: #333;
                             transition: all 0.2s linear;
@@ -854,6 +860,18 @@
                                 display: block;
                                 animation: slideInLeft 1s both;
                             }
+                        }
+                    }
+                }
+            }
+            .whistList {
+                a {
+                    i {
+                        font-size: 20px;
+                        margin-right: 5px;
+                        transition: .3s linear;
+                        &:hover{
+                            color: $mainColor;
                         }
                     }
                 }
@@ -962,9 +980,9 @@
                     color: black;
                 }
             }
-        }p{
-        margin: 0;
-          
+        }
+        p {
+            margin: 0;
         }
     }
 }
