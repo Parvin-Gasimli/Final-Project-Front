@@ -28,6 +28,18 @@ if (Closebuton) {
     })
 }
 
+let modalArr = Array.from(document.querySelectorAll('.info_pro2'));
+for (let modal of modalArr) {
+    modal.addEventListener('click',function (e) {
+        e.preventDefault();
+        modal.classList.remove("show")
+        modal.style.display="block"
+       
+    })
+}
+
+
+
 //atibute
 
 const TabNavigations = Array.from(document.querySelectorAll(".nav .fil_btn"))
@@ -148,7 +160,7 @@ $(this).siblings(this).removeClass('active').end().addClass('active');
     });
 
 
-
+//search buttonss
     $(".menu_search-item-search").click(function () {
         $(".search_wrap").addClass("show");
         $(".search_overlay").addClass("show");
