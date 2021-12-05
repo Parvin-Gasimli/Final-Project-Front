@@ -1,0 +1,46 @@
+#toast{
+    .icon {
+        height: 2rem;
+        width: 2rem;
+        margin-right: 1rem;
+        color: white;
+      }
+      
+      .text {
+        color: white;
+      }
+      
+      .toast {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+        right: -500px;
+        background-color: black;
+        border-radius: 12px;
+        padding: 0.5rem 1rem;
+        border: 5px solid #029c91;
+        opacity: 0%;
+        transition: all 0.25s ease-out;
+      }
+      
+      .show-toast {
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        padding: 8px;
+        cursor: pointer;
+      }
+      
+      .toast-active {
+        right: 80px;
+        opacity: 100%;
+      }
+      
+      .close-button {
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+}

@@ -55,6 +55,7 @@ function fillCard(){
                 let productId=elem.getAttribute('data-productId');
                 basketProducts=basketProducts.filter(x=>x.id!=productId);
                 localStorage.setItem('basket',JSON.stringify(basketProducts));
+                // elem.count--;
                 elem.parentElement.remove();
                 addedSpecificValues();
             })
@@ -78,4 +79,10 @@ function addedSpecificValues(){
     document.querySelector('.total_price').innerText = getSpecificValues().sum;
 }
 
-// bu qeder sirin))) oprem sirinnnnn
+let toast = document.getElementById("toast");
+document.getElementById("show-toast").addEventListener("click", function () {
+  toast.classList.add("toast-active");
+});
+document.getElementById("close-button").addEventListener("click", function () {
+  toast.classList.remove("toast-active");
+});
