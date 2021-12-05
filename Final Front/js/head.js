@@ -1,4 +1,8 @@
 $(document).ready(function(){
+
+   
+  AOS.init();
+
     $(".header__icon").click(function(){
         $(".list-item").toggleClass('show');
     });
