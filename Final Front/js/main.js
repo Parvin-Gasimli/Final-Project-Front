@@ -174,13 +174,6 @@ $('.info__switch-color span,.product_size_switch span').on("click", function () 
 
 
 
-
-
-
-
-
-
-
 })(jQuery);
 let close = document.querySelectorAll('.close-zoom');
 close.forEach(function (item) {
@@ -189,25 +182,17 @@ close.forEach(function (item) {
     })
 })
 
-// let modal = document.querySelectorAll('.modal-dialog');
-//     modal.forEach(function(item){
-//         item.addEventListener('click', function(){
-//             $('.zoomContainer').remove();
-//         })
-//     })
-
 
 
 //Rate
-let star = document.querySelectorAll(".star__item");
-star.forEach(function (item) {
-    item.addEventListener('click', function () {
-        this.classList.add('active');
-        this.previousElementSibling.classList.add('active');
-        this.nextElementSibling.classList.remove('active');
-    })
-})
-
+// let star = document.querySelectorAll(".star__item");
+// star.forEach(function (item) {
+//     item.addEventListener('click', function () {
+//         this.classList.add('fas');
+//         this.previousElementSibling.classList.add('fas');
+//         this.nextElementSibling.classList.remove('far');
+//     })
+// })
 
 
 
