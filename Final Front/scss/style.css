@@ -9393,6 +9393,7 @@ nav .social a i:hover {
 }
 
 #secondnavbar {
+  width: 100%;
   background-color: #202020b8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9403,7 +9404,7 @@ nav .social a i:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
+  padding: 13px;
   color: #fff;
 }
 
@@ -9413,6 +9414,13 @@ nav .social a i:hover {
 
 #secondnavbar .logo img {
   margin-left: 50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 555;
 }
 
 .nav-links a {

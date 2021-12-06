@@ -152,98 +152,96 @@ toasticon.forEach(elem => {
 
 const starIcon = document.getElementById("star1")
 
-starIcon.addEventListener("click", function (e) {
-    e.preventDefault();
-    console.log("starred");
-    let icon1 = document.querySelector('.comment-stars .far')
+if(starIcon!=null){
+    starIcon.addEventListener("click", function (e) {
+        e.preventDefault();
+       
+        let icon1 = document.querySelector('.comment-stars .far')
+        
+        icon1.classList.remove("far");
+        icon1.classList.add("fas")
     
-    icon1.classList.remove("far");
-    icon1.classList.add("fas")
-
-})
+    })
+}
 
 const starIcon2 = document.getElementById("star2")
-starIcon2.addEventListener("click", function (e) {
-    e.preventDefault();
-    let icon1 = document.querySelector('.comment-stars .far')
- 
-    icon1.classList.remove("far");
-    icon1.classList.add("fas")
-    let icon2 = document.querySelector('.comment-stars .far')
-
-    icon2.classList.remove("far");
-    icon2.classList.add("fas")
-
-
-})
+if(starIcon2!=null){
+    starIcon2.addEventListener("click", function (e) {
+        e.preventDefault();
+        let icon1 = document.querySelector('.comment-stars .far')
+        icon1.classList.remove("far");
+        icon1.classList.add("fas")
+        let icon2 = document.querySelector('.comment-stars .far')
+        icon2.classList.remove("far");
+        icon2.classList.add("fas")
+    
+    
+    })
+}
 const starIcon3 = document.getElementById("star3")
-starIcon3.addEventListener("click", function (e) {
-    e.preventDefault();
-    let icon1 = document.querySelector('.comment-stars .far')
-    console.log(icon1);
-    icon1.classList.remove("far");
-    icon1.classList.add("fas")
-    let icon2 = document.querySelector('.comment-stars .far')
-   
-    icon2.classList.remove("far");
-    icon2.classList.add("fas")
-    let icon3 = document.querySelector('.comment-stars .far')
-
-    icon3.classList.remove("far");
-    icon3.classList.add("fas")
-
-
-})
+if(starIcon3!=null){
+    starIcon3.addEventListener("click", function (e) {
+        e.preventDefault();
+        let icon1 = document.querySelector('.comment-stars .far')
+      
+        icon1.classList.remove("far");
+        icon1.classList.add("fas")
+        let icon2 = document.querySelector('.comment-stars .far')
+        icon2.classList.remove("far");
+        icon2.classList.add("fas")
+        let icon3 = document.querySelector('.comment-stars .far')
+        icon3.classList.remove("far");
+        icon3.classList.add("fas")
+    
+    
+    })
+}
 const starIcon4 = document.getElementById("star4")
-starIcon4.addEventListener("click", function (e) {
-    e.preventDefault();
-    let icon1 = document.querySelector('.comment-stars .far')
-   
-    icon1.classList.remove("far");
-    icon1.classList.add("fas")
-    let icon2 = document.querySelector('.comment-stars .far')
-  
-    icon2.classList.remove("far");
-    icon2.classList.add("fas")
-    let icon3 = document.querySelector('.comment-stars .far')
-
-    icon3.classList.remove("far");
-    icon3.classList.add("fas")
-    let icon4 = document.querySelector('.comment-stars .far')
-
-    icon4.classList.remove("far");
-    icon4.classList.add("fas")
-
-
-})
+if(starIcon4!=null){
+    starIcon4.addEventListener("click", function (e) {
+        e.preventDefault();
+        let icon1 = document.querySelector('.comment-stars .far') 
+        icon1.classList.remove("far");
+        icon1.classList.add("fas")
+        let icon2 = document.querySelector('.comment-stars .far')
+        icon2.classList.remove("far");
+        icon2.classList.add("fas")
+        let icon3 = document.querySelector('.comment-stars .far')
+        icon3.classList.remove("far");
+        icon3.classList.add("fas")
+        let icon4 = document.querySelector('.comment-stars .far')
+        icon4.classList.remove("far");
+        icon4.classList.add("fas")
+    
+    
+    })
+}
 
 const starIcon5 = document.getElementById("star5")
-starIcon5.addEventListener("click", function (e) {
-    e.preventDefault();
-    let icon1 = document.querySelector('.comment-stars .far')
-  
-    icon1.classList.remove("far");
-    icon1.classList.add("fas")
-    let icon2 = document.querySelector('.comment-stars .far')
-   
-    icon2.classList.remove("far");
-    icon2.classList.add("fas")
-    let icon3 = document.querySelector('.comment-stars .far')
-
-    icon3.classList.remove("far");
-    icon3.classList.add("fas")
-    let icon4 = document.querySelector('.comment-stars .far')
-
-    icon4.classList.remove("far");
-    icon4.classList.add("fas")
-    let icon5 = document.querySelector('.comment-stars .far')
-
-    icon5.classList.remove("far");
-    icon5.classList.add("fas")
-    // console.log(icon5);
-
-
-
-})
-
+if(starIcon5!=null){
+    starIcon5.addEventListener("click", function (e) {
+        e.preventDefault();
+        let icon1 = document.querySelector('.comment-stars .far')
+        icon1.classList.remove("far");
+        icon1.classList.add("fas")
+        let icon2 = document.querySelector('.comment-stars .far')
+        icon2.classList.remove("far");
+        icon2.classList.add("fas")
+        let icon3 = document.querySelector('.comment-stars .far')
+        icon3.classList.remove("far");
+        icon3.classList.add("fas")
+        let icon4 = document.querySelector('.comment-stars .far')
+        icon4.classList.remove("far");
+        icon4.classList.add("fas")
+        let icon5 = document.querySelector('.comment-stars .far')
+    
+        icon5.classList.remove("far");
+        icon5.classList.add("fas")
+        // console.log(icon5);
+    
+    
+    
+    })
+    
+}
 
