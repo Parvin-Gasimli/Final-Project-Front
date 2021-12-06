@@ -198,26 +198,6 @@ close.forEach(function (item) {
 
 
 
-// //Zoom
-// $("#zoomModal").on('shown.bs.modal', function (){
-//     $("#zoompro").elevateZoom({
-//         gallery: "gallery",
-//         galleryActiveClass: "active",
-
-//         easing: true,
-//         zoomType: 'inner',
-//         cursor: 'crosshair',
-//     });
-// });
-
-// $("#zoompro2").elevateZoom({
-//     gallery: "gallery",
-//     galleryActiveClass: "active",
-//     easing: true,
-//     zoomType: 'inner',
-//     cursor: 'crosshair',
-// });
-
 //Rate
 let star = document.querySelectorAll(".star__item");
 star.forEach(function (item) {
@@ -228,24 +208,6 @@ star.forEach(function (item) {
     })
 })
 
-// //Fancy Box
-// $(".box__btn").on("click", function () {
-//     // set gallery targets
-//     var gallery = [{
-//         href: "assets/images/product_img1.jpg"
-//     }, {
-//         href: "assets/images/product_img1-2.jpg"
-//     }, {
-//         href: "assets/images/product_img1-3.jpg"
-//     }, {
-//         href: "assets/images/product_img1-4.jpg"
-//     }];
-//     // triggers fancybox programmatically
-//     $.fancybox(gallery, {
-//         // API options here
-//     });
-//     return false; // prevents default and stops propagation 
-// });
 
 
 
@@ -266,5 +228,7 @@ if (plus) {
         }
     })
 }
+
+  
 
 

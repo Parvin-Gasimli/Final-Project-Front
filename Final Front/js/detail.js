@@ -1,7 +1,7 @@
 //Details counter
 
-//increase
-
+//
+//Modal Cart  increase
 $( ".spinner-prev" ).click(function() {
     var prev = parseInt($(".spinner input").val());
     console.log(prev);
@@ -17,11 +17,11 @@ $( ".spinner-prev" ).click(function() {
   });
   
   
-  // //decrease
+  // Modal Cart decrease
   
   $( ".spinner-next" ).click(function() {
     var next = parseInt($(".spinner input").val());
-    console.log(next);
+    // console.log(next);
     if(next >= 100){
          $(".spinner input").val('100');
   
@@ -75,47 +75,8 @@ $( ".spinner-prev" ).click(function() {
   
   
   
-  ///Comment stars control
+  //starts control
   
-  $( "#s1" ).click(function() {
-    $('.comment-stars .fas').removeClass("fas").addClass("far");
-    $("#s1 .fa-star").removeClass("far").addClass("fas");
-  
-  });
-  
-  $( "#s2" ).click(function() {
-    $('.comment-stars .fas').removeClass("fas").addClass("far");
-    $("#s1 .fa-star").removeClass("far").addClass("fas");
-    $("#s2 .fa-star").removeClass("far").addClass("fas");
-  
-  });
-  
-  $( "#s3" ).click(function() {
-    $('.comment-stars .fas').removeClass("fas").addClass("far");
-    $("#s1 .fa-star").removeClass("far").addClass("fas");
-    $("#s2 .fa-star").removeClass("far").addClass("fas");
-    $("#s3 .fa-star").removeClass("far").addClass("fas");
-  
-  });
-  
-  $( "#s4" ).click(function() {
-    $('.comment-stars .fas').removeClass("fas").addClass("far");
-    $("#s1 .fa-star").removeClass("far").addClass("fas");
-    $("#s2 .fa-star").removeClass("far").addClass("fas");
-    $("#s3 .fa-star").removeClass("far").addClass("fas");
-    $("#s4 .fa-star").removeClass("far").addClass("fas");
-  
-  });
-  
-  $( "#s5" ).click(function() {
-    $('.comment-stars .fas').removeClass("fas").addClass("far");
-    $("#s1 .fa-star").removeClass("far").addClass("fas");
-    $("#s2 .fa-star").removeClass("far").addClass("fas");
-    $("#s3 .fa-star").removeClass("far").addClass("fas");
-    $("#s4 .fa-star").removeClass("far").addClass("fas");
-    $("#s5 .fa-star").removeClass("far").addClass("fas");
-  
-  });
   
   //Default image Detail
   $(".imgBox img").attr("src", $(".mini-image-box li:first-child img").attr("src"));

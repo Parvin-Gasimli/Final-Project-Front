@@ -1,8 +1,11 @@
+
+
+
+
 $(document).ready(function(){
 
    
-  AOS.init();
-
+ 
     $(".header__icon").click(function(){
         $(".list-item").toggleClass('show');
     });
@@ -124,3 +127,15 @@ $(document).ready(function(){
 
     
 })
+
+
+AOS.init({
+
+    offset: 120, 
+    delay: 0,
+    duration: 1400, 
+    easing: 'ease', 
+    once: false, 
+    mirror: false, 
+    anchorPlacement: 'top-bottom',
+    });
