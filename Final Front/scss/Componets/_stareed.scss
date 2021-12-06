@@ -1,4 +1,5 @@
-.clearfix {
+.clearfix
+ {
     clear:both;
   }
   
@@ -86,28 +87,28 @@
     padding:10px 10px;
     border:1px solid #eee;
     background:#f9f9f9;
+    img {
+        margin-right:10px;
+        display:inline-block;
+        vertical-align:top;
+        width: 20px;
+      }
+      >div {
+        vertical-align:top;
+        display:inline-block;
+        color:#888;
+      }
   }
   
-  .success-box img {
-    margin-right:10px;
-    display:inline-block;
-    vertical-align:top;
-  }
   
-  .success-box > div {
-    vertical-align:top;
-    display:inline-block;
-    color:#888;
-  }
+  
   
   
   
   .rating-stars ul {
     list-style-type:none;
     padding:0;
-    
-    -moz-user-select:none;
-    -webkit-user-select:none;
+
   }
   .rating-stars ul > li.star {
     display:inline-block;
@@ -133,3 +134,6 @@
   #stars{
       display: flex;
   }
+
+
+

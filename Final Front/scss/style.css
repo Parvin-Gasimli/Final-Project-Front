@@ -9771,6 +9771,7 @@ pre {
   margin-right: 10px;
   display: inline-block;
   vertical-align: top;
+  width: 20px;
 }
 
 .success-box > div {
@@ -9782,8 +9783,6 @@ pre {
 .rating-stars ul {
   list-style-type: none;
   padding: 0;
-  -moz-user-select: none;
-  -webkit-user-select: none;
 }
 
 .rating-stars ul > li.star {

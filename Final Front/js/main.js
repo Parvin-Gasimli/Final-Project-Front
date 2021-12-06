@@ -17,7 +17,7 @@ if (pluses) {
 //Subscribe Close butoons js
 
 var Closebuton = document.getElementsByClassName("close")[0]
-if (Closebuton) {
+if (Closebuton!=null) {
     // console.log("hi");
     Closebuton.addEventListener("click", function (e) {
         // console.log("salam");
