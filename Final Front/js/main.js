@@ -137,7 +137,7 @@ $('.info__switch-color span,.product_size_switch span').on("click", function () 
 
 (function ($) {
     'use strict';
-    //Loader run the  then open the page function
+    //Loader run the  then open the page
     $(window).on('load', function () {
         setTimeout(function () {
             $(".preloader").delay(700).fadeOut(700).addClass('loaded');
