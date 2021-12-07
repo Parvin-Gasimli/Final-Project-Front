@@ -9449,6 +9449,10 @@ nav .social a i:hover {
   padding: 5px 14px;
 }
 
+.menu li a {
+  text-decoration: none;
+}
+
 .menu li a i {
   font-size: 23px;
 }
