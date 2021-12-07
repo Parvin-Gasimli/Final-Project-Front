@@ -9566,7 +9566,7 @@ input[type="checkbox"] {
   border-radius: 25px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  background-color: #ff324d;
+  background-color: transparent;
   padding-right: 40px;
   color: #fff;
 }
