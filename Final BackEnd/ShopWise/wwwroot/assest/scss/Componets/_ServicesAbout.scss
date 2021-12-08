@@ -1,0 +1,66 @@
+.service {
+    padding-top: 40px;
+    .info {    border-right: 1px solid gray;
+        .info-icon {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            border: 1px solid rgb(75, 74, 74);
+            border-radius: 50%;
+            img {
+                transition: 0.4s linear;
+                width: 40px;
+                object-fit: cover;
+                
+                animation: mymove 3s infinite;
+
+                object-fit: cover;
+            }
+        }
+        .info-content {
+            h6 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 11px;
+            }
+            p {
+                color: gray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                padding: 15px 88px;
+            }
+        }
+       
+    }
+}
+@keyframes mymove {
+    10% {
+        transform: rotate(10deg);
+    }
+    20%{
+        transform: rotate(20deg);
+    }
+    30%{
+        transform: rotate(30deg);
+    }
+    40%{
+        transform: rotate(40deg);
+    }
+    50%{
+        transform: rotate(50deg);
+    }
+    60%{
+        transform: rotate(60deg);
+    }
+    70%{
+        transform: rotate(70deg);
+    }
+}

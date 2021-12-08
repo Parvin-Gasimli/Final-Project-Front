@@ -1,0 +1,36 @@
+
+.divider-medium {
+    height: 50px;
+
+    @media (max-width: 1200px) {
+        height: 40px;
+    }
+
+    @media (max-width: 777px) {
+        height: 25px;
+    }
+
+    @media (max-width: 576px) {
+        height: 15px;
+    }
+}
+
+.divider-border {
+    text-align: center;
+
+
+    i {
+        background-color: $whiteColor;
+        color: #d9d9d9;
+        position: relative;
+
+        z-index: 1;
+        font-size: 30px;
+        padding: 0 40px;
+
+        @media (max-width: 480px) {
+            font-size: 26px;
+            padding: 0 25px;
+        }
+    }
+}

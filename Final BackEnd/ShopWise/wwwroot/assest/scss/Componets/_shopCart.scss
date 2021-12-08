@@ -1,0 +1,277 @@
+.shop {
+    padding-top: 100px;
+
+    @media (max-width: 1200px) {
+        padding-top: 80px 0;
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 50px 0;
+
+        thead {
+            display: none;
+        }
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 30px 0;
+    }
+    .table {
+        color: #292b2c;
+
+        th {
+            vertical-align: middle;
+            text-align: center;
+
+            &.shop__name {
+                text-align: left;
+            }
+        }
+
+        td {
+            vertical-align: middle;
+            text-align: center;
+
+            @media (max-width: 992px) {
+                padding: 0.3rem;
+            }
+
+            @media (max-width: 767px) {
+                width: 100%;
+                display: block;
+                padding: 0.75rem;
+
+                &::before {
+                    content: attr(data-title) " ";
+                    float: left;
+                    text-transform: capitalize;
+                    margin-right: 15px;
+                    font-weight: bold;
+                }
+            }
+
+            &.shop__name {
+                text-align: left;
+
+                @media (max-width: 767px) {
+                    text-align: right;
+                }
+
+                a {
+                    color: black;
+                    cursor: pointer;
+                    transition: all, 0.3s, ease-in-out, 0s;
+
+                    &:hover {
+                        color: $mainColor;
+                    }
+                }
+            }
+
+            img {
+                max-width: 90px;
+
+                @media (max-width: 990px) {
+                    max-width: 78px;
+                }
+            }
+
+            &.shop__total,
+            &.shop__price {
+                font-weight: 600;
+
+                @media (max-width: 767px) {
+                    text-align: right;
+                }
+            }
+
+            &.shop__remove {
+                @media (max-width: 767px) {
+                    text-align: right;
+                }
+
+                i {
+                    height: 30px;
+                    width: 30px;
+                    color: $whiteColor;
+                    display: inline-block;
+                    line-height: 30px;
+                    text-align: center;
+                    border-radius: 100%;
+                    font-size: 14px;
+                    background-color: black;
+
+                    &:hover {
+                        background-color: $mainColor;
+                        color: $whiteColor;
+                    }
+                }
+            }
+
+            .shop__coupon {
+                display: flex;
+                position: relative;
+
+                @media (max-width: 767px) {
+                    margin-bottom: 1rem;
+                }
+
+                input {
+                    height: 40px;
+                    display: block;
+                    width: 1%;
+                    flex: 1 1 auto;
+                    padding: 8px 15px;
+                    border: 1px solid #ced4da;
+                    border-radius: 0.25rem;
+                    font-size: 0.875rem;
+                    border-right: none;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    border-color: 0.15s, ease-in-out, 0s;
+
+                    &:focus {
+                        border-color: #80bdff;
+                    }
+                }
+
+                &-add {
+                    .add__btn {
+                        display: inline-block;
+                        position: relative;
+                        vertical-align: middle;
+                        background: transparent;
+                        overflow: hidden;
+                        text-align: center;
+                        text-transform: capitalize;
+                        transition: all 0.3s ease 0s;
+                        z-index: 0;
+                        cursor: pointer;
+                        padding: 8px 11px;
+                        border-radius: 0.25rem;
+                        font-size: 0.875rem;
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                        border: 1px solid $mainColor;
+                        color: black;
+                        font-weight: bolder;
+
+                        &::after {
+                            left: 0;
+                            background-color: $mainColor;
+                        }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            z-index: -1;
+                            transition: all 0.3s ease-in-out;
+                            width: 51%;
+                            right: 0;
+                            background-color: $mainColor;
+                        }
+
+                        &:hover {
+                            color: $mainColor;
+                            &::after,
+                            &::before {
+                                width: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .shop__update {
+                text-align: right;
+
+                @media (max-width: 767px) {
+                    text-align: left;
+                }
+
+                &-btn {
+                    display: inline-block;
+                    position: relative;
+                    vertical-align: middle;
+                    background: transparent;
+                    overflow: hidden;
+                    text-align: center;
+                    text-transform: capitalize;
+                    transition: all 0.3s ease 0s;
+                    z-index: 0;
+                    cursor: pointer;
+                    padding: 8px 11px;
+                    border-radius: 0.25rem;
+                    font-size: 0.875rem;
+                    border: 1px solid #333;
+                    color: #333;
+
+                    &::after {
+                        position: absolute;
+                        top: 50%;
+                        content: "";
+                        width: 20px;
+                        height: 20px;
+                        background-color: #333;
+                        border-radius: 50%;
+                        z-index: -1;
+                        left: -20px;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &::before {
+                        position: absolute;
+                        top: 50%;
+                        content: "";
+                        width: 20px;
+                        height: 20px;
+                        background-color: #333;
+                        border-radius: 50%;
+                        z-index: -1;
+                        right: -20px;
+                        transform: translate(50%, -50%);
+                    }
+
+                    &:hover {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+    .imgs {
+        margin: 0;
+        width: 138px;
+        height: 131px;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    .shop__quantity {
+        .addtocart {
+            width: 200px;
+            height: 40px;
+            border: none;
+            background-color: $mainColor;
+            color: white;
+            transition: .3s linear;
+            &:hover{
+                background-color: white;
+                color: $mainColor;
+                border: 1px solid gray;
+            }
+        }
+    }
+    .butoons {
+        border: none;
+        border-radius: 50%;
+    }
+    .update {
+        padding: 60px;
+        background: aliceblue;
+    }
+}

@@ -1,0 +1,43 @@
+.partners {
+
+    .row {
+        display: flex;
+        padding: 70px 0px 70px 0px;
+        position: relative;
+        .multiple-items{
+            .right{
+                position: absolute;
+                top: -58px;
+                right: 17px;
+                font-size: 23px;
+            }
+            .left{
+                position: absolute;
+                top: -58px;
+                right: 60px;
+                font-size: 23px;
+            }
+        }
+        .col-lg-3{
+            h2{
+                hr{
+                    width: 100%;
+                }
+            }
+        }
+        img {
+            width: 198px;
+            object-fit: cover;
+            opacity: 0.7;
+            cursor: pointer;
+            width: auto;
+    
+            transition: all 0.5s ease-in-out;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    
+}

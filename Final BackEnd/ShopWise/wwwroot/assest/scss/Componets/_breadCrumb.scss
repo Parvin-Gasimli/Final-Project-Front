@@ -1,0 +1,68 @@
+.bread-crumb{
+    .container-fluid{
+        background-color: #f7f8fb !important;
+        .container{
+            padding: 70px 0;
+            // width: 100%;
+            max-width: 1140px !important;
+
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+               
+
+                .page-title{
+                    width: 100%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    @media only screen and (max-width: 767px){
+                        &{
+                            margin-bottom: 15px;
+                        }
+                    }
+                    
+
+                    h1{
+                        font-family: 'Roboto';
+                        font-size: 28px;
+                        margin: 0;
+                        text-transform: capitalize;
+                        font-weight: bold;
+                        line-height: normal;
+                        color: #292b2c;
+                    }
+                }
+                .breadcrumb{
+                    background-color: transparent;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    border-radius: .25rem;
+        
+                    .breadcrumb-item{
+
+                        a{
+                            text-decoration: none;
+                            transition: all .3s ease-in-out;
+                            background-color: transparent;
+                            cursor: pointer;
+                            color: #292b2c;
+                            
+
+
+                        }
+        
+                    }
+                }
+            }
+    
+           
+        }
+    }
+   
+}
